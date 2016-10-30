@@ -1,15 +1,8 @@
-function addListener(event, obj, fn) {
-    if (obj.addEventListener) {
-        obj.addEventListener(event, fn, false);   // modern browsers
-    } else {
-        obj.attachEvent("on"+event, fn);          // older versions of IE
-    }
+function alertBox () {
+
+	alert("Clicked");
 }
 
-var element = document.getElementById('abcd');
-
-addListener('click', element, function () {
-    alert("Clicked");
-});
-
-alert("Loaded");
+var xyz = document.getElementsByClassName("abcd");
+var xyz = xyz[0];
+xyz.addEventListener("click", function alertBox() {alert('This is supposed to work like this.')}, false);
