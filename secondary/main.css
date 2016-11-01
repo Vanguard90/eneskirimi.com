@@ -416,9 +416,14 @@ img {
 
 .teaser-image {
     padding-right: 1.25%;
-    width: 48.75%;
+    width: 48.25%;
     height: auto;
     display: inline-block;
+}
+
+.image-right {
+
+    padding-right: 0; 
 }
 
 picture img {
@@ -427,18 +432,20 @@ picture img {
 }
 
 .teaser-text {
-    width: 48.75%;
+    width: 48.25%;
     display: inline-block;
 }
 
 .teaser-text-right {
     float: right;
     padding-left: 1.25%;
+    padding-right: 1%; /* Padding between text and border */
 }
 
 .teaser-text-left {
     float: left;
     padding-right: 1.25%;
+    padding-left: 1%; /* Padding between text and border */
 }
 
 .light-color {
@@ -457,6 +464,28 @@ picture img {
 .teaser-text p {
     padding-top: 0;
 }
+
+button {
+    padding: 5px 7px;
+    margin-top: 3%;
+    background: rgba(240,240,240,1);
+    color: rgba(39,52,46,1);
+    text-decoration: none;
+    border-radius: 10%;
+    border: solid 1px rgb(247,248,248);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.65);
+    font-size: 14px;
+}
+
+button:hover {
+    background: rgb(181,189,196);
+}
+
+button:active {
+    background: rgb(225,228,231);
+
+}
+
     
 }
 
@@ -553,9 +582,79 @@ h3 {
 }
 
 p {
+
     padding-top: 16px;
     font-family: "Garamond", serif;
 }
+
+
+.wrapper {
+    background-color:rgba(39,52,46,1);
+    padding: 20px 0 0 0;
+}
+
+.wrapper-vanilla {
+    background-color: transparent;
+    padding-top: 0px;
+}
+
+/* Overwrites the previous top padding at ".wrapper". */
+
+.teaser-image {
+    width: 100%;
+    text-align: center;
+}
+
+picture img {
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.light-color {
+    
+    color: rgb(225,228,231);
+}
+
+.teaser-text {
+
+    padding:0 1% 20px 1%;
+}
+
+.teaser-text h3 {
+    padding-top: 20px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 20px;
+}
+
+.teaser-text p {
+    padding-top: 0;
+}
+
+button {
+    padding: 5px 7px;
+    margin-top: 3%;
+    background: rgba(240,240,240,1);
+    color: rgba(39,52,46,1);
+    text-decoration: none;
+    border-radius: 10%;
+    border: solid 1px rgb(247,248,248);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.65);
+    font-size: 14px;
+}
+
+button:hover {
+    background: rgb(181,189,196);
+}
+
+button:active {
+    background: rgb(225,228,231);
+
+}
+
+
+
 }
 
 @media (max-width:450px) {

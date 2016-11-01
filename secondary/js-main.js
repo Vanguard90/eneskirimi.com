@@ -1,7 +1,3 @@
-function alertBox () {
-
-	alert("Clicked");
-}
 
 /*
 var xyz = document.getElementsByClassName("abcd");
@@ -12,5 +8,5 @@ xyz.addEventListener("click", function alertBox() {alert('This is supposed to wo
 var buttonClick = document.getElementsByClassName("abcd");
 var i;
 for (i = 0; i < buttonClick.length; i++) {
-    buttonClick[i].addEventListener("click", function alertBox() {alert('This is supposed to work like this.')}, false);
+    buttonClick[i].addEventListener("click", function() {alert('This is supposed to work like this.')}, false);
 }
