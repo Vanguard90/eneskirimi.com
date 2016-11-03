@@ -201,29 +201,6 @@ button:active {
     background: rgb(225,228,231);
 
 }
-
-.carouselbox {
-    display: block;
-    margin: 0 auto;
-    width: 960px;
-}
-
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: auto;
-    font-family: helvetica, sans-serif;
-    text-align: center;
-}
-
-.carousel ol {
-        list-style: none;
-}
-
-.carousel li {
-    padding: 10px 0 10px 0;
-}
-
 }
 
 footer {
@@ -486,7 +463,83 @@ button:active {
 
 }
 
-    
+
+footer {
+    background-color: rgb(61,81,72);
+    min-height: 150px;
+}
+
+.inline{
+    display: inline;
+}
+
+.left ul li {
+    display: inline-block;
+    padding-right: 1%;
+    border-right: solid #e1e4e7 1px;
+}
+
+.left ul li:last-child {
+    border-right: none;
+}
+
+.half {
+    width: 40%;
+}
+
+footer div div, .disclaimer {
+    margin: 0 5%;
+    padding: 34px 0 0 0;
+}
+
+footer div div a {
+    color: #e1e4e7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+footer div div h4 {
+    padding-bottom: 0.1%;
+}
+
+footer div p {
+    color: #e1e4e7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    padding-top: 1%;
+}
+
+footer div h4 a:hover {
+    font-size: 16px;
+}
+
+.left {
+    float: left;
+}
+
+.left a {
+    text-decoration: none;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.right a {
+    padding-right: 0.75%;
+}
+
+.right a:last-child {
+    padding-right: 0;
+}
+
+.disclaimer {
+    padding: 20px 0 20px 0;
+    clear: both;
+}
+
+
 }
 
 @media (min-width:451px) and (max-width:700px) {
@@ -590,12 +643,12 @@ p {
 
 .wrapper {
     background-color:rgba(39,52,46,1);
-    padding: 20px 0 0 0;
+    padding: 20px 0 20px 0;
 }
 
 .wrapper-vanilla {
     background-color: transparent;
-    padding-top: 0px;
+    padding: 20px 0 20px 0;
 }
 
 /* Overwrites the previous top padding at ".wrapper". */
@@ -603,6 +656,7 @@ p {
 .teaser-image {
     width: 100%;
     text-align: center;
+    margin-top: 20px;
 }
 
 picture img {
