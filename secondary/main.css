@@ -385,6 +385,7 @@ p {
 .teaser {
     width: 100%;
     margin: 0 auto;
+    height: auto;
 }
 
 img {
@@ -392,7 +393,6 @@ img {
 }
 
 .teaser-image {
-    padding-right: 1.25%;
     width: 48.25%;
     height: auto;
     display: inline-block;
@@ -467,6 +467,8 @@ button:active {
 footer {
     background-color: rgb(61,81,72);
     min-height: 150px;
+    display: block;
+    position: relative;
 }
 
 .inline{
@@ -538,7 +540,6 @@ footer div h4 a:hover {
     padding: 20px 0 20px 0;
     clear: both;
 }
-
 
 }
 
@@ -643,12 +644,12 @@ p {
 
 .wrapper {
     background-color:rgba(39,52,46,1);
-    padding: 20px 0 20px 0;
+    padding: 0px 0 20px 0;
 }
 
 .wrapper-vanilla {
     background-color: transparent;
-    padding: 20px 0 20px 0;
+    padding: 0 0 20px 0;
 }
 
 /* Overwrites the previous top padding at ".wrapper". */
@@ -657,6 +658,11 @@ p {
     width: 100%;
     text-align: center;
     margin-top: 20px;
+}
+
+.image-right {
+
+    margin-top: 0px;
 }
 
 picture img {
@@ -808,5 +814,7 @@ p {
     padding-top: 16px;
     font-family: "Garamond", serif;
 }
+
+
     
 }
