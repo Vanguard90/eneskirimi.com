@@ -39,6 +39,41 @@ time, mark, audio, video {
   src: url("fonts/garamond/Garamond.ttf");
 }
 
+header {
+
+    background: linear-gradient( rgba(203,208,214, 0.5), rgba(225,228,231,0.5));
+    min-height: 50px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+header div {
+
+    width: 25%;
+    padding-right: 5%;
+    position: relative;
+}
+
+header ol {
+
+    position: relative;
+    text-decoration: none;
+    display: inline;
+    width: 75%;
+}
+
+header ol li:last-child {
+
+    padding-right: 0;
+}
+
+header ol li {
+
+    display: inherit;
+    padding-right: 5%;
+}
+
 body {
     overflow-x: hidden;
 }
