@@ -41,7 +41,7 @@ time, mark, audio, video {
 
 header {
 
-    background: linear-gradient( rgba(203,208,214, 0.5), rgba(225,228,231,0.5));
+    background: linear-gradient( rgba(203,208,214, 0.005), rgba(225,228,231,0.005));
     min-height: 50px;
     width: 100%;
     position: absolute;
@@ -72,6 +72,8 @@ header ol li {
 
     display: inherit;
     padding-right: 5%;
+    color: #f5f5f5;
+    text-shadow: text-shadow: 2px 2px 2px #ffffff;
 }
 
 body {

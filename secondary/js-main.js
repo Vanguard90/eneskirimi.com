@@ -1,10 +1,3 @@
-
-/*
-var xyz = document.getElementsByClassName("abcd");
-var xyz = xyz[0];
-xyz.addEventListener("click", function alertBox() {alert('This is supposed to work like this.')}, false);
-*/
-
 /* Button click start */
 
 var buttonClick = document.getElementsByClassName("abcd");
@@ -22,11 +15,21 @@ var windowWidth = parseInt(window.innerWidth);
 var mobileTeaser = document.getElementById("mobile-teaser");
 
 var mobileTeaserImage = document.getElementById("mobile-teaser-image");
-
 mobileTeaser.insertBefore(mobileTeaserImage, mobileTeaser.childNodes[0]);
 
 }
 
+
+let mouseover = document.getElementsByClassName("header-element");
+for (i = 0; i < mouseover.length; i++ ) {
+	mouseover[i].addEventListener("mouseover",function headerMouseOver() {alert ("Mouseover event!");}, false);
+}
+
+
+let mouseout = document.getElementsByClassName("header-element");
+for (i = 0; i < mouseout.length; i++) {
+	mouseout[i].addEventListener("mouseout", function headerMouseOut () {alert ("Mouseout event!");}, false);
+}
 
 	/*         var h = parseInt(window.innerHeight);
         var w = parseInt(window.innerWidth);
