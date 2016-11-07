@@ -41,11 +41,41 @@ time, mark, audio, video {
 
 header {
 
-    background: linear-gradient( rgba(203,208,214, 0.005), rgba(225,228,231,0.005));
+    background: #ffffff;
     min-height: 50px;
     width: 100%;
     position: absolute;
     z-index: 1;
+}
+
+@keyframes header-logo {
+
+    0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+
+}
+
+header div:nth-of-type(1) {
+  animation-delay: 4s;
+}
+header div:nth-of-type(2) {
+  animation-delay: 2s;
+}
+header div:nth-of-type(3) {
+  animation-delay: 0s;
 }
 
 header div {
@@ -53,6 +83,17 @@ header div {
     width: 25%;
     padding-right: 5%;
     position: relative;
+}
+
+header div img.first-image {
+
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+    animation-name: header-logo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
 }
 
 header ol {
@@ -72,8 +113,9 @@ header ol li {
 
     display: inherit;
     padding-right: 5%;
-    color: #f5f5f5;
-    text-shadow: text-shadow: 2px 2px 2px #ffffff;
+    color: rgba(39,52,46,1);
+    text-shadow: 2px 2px 2px #ffffff;
+    font-size: 16px;
 }
 
 body {

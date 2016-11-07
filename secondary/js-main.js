@@ -19,7 +19,7 @@ mobileTeaser.insertBefore(mobileTeaserImage, mobileTeaser.childNodes[0]);
 
 }
 
-
+ /*
 let mouseover = document.getElementsByClassName("header-element");
 for (i = 0; i < mouseover.length; i++ ) {
 	mouseover[i].addEventListener("mouseover",function headerMouseOver() {alert ("Mouseover event!");}, false);
@@ -30,6 +30,7 @@ let mouseout = document.getElementsByClassName("header-element");
 for (i = 0; i < mouseout.length; i++) {
 	mouseout[i].addEventListener("mouseout", function headerMouseOut () {alert ("Mouseout event!");}, false);
 }
+*/
 
 	/*         var h = parseInt(window.innerHeight);
         var w = parseInt(window.innerWidth);
