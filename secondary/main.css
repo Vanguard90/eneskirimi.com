@@ -967,6 +967,80 @@ p {
     font-family: "Garamond", serif;
 }
 
+footer {
+    background-color: rgb(61,81,72);
+    min-height: 150px;
+}
 
+
+.inline{
+    display: inline;
+}
+
+.left ul li {
+    display: inline-block;
+    padding-right: 1%;
+    border-right: solid #e1e4e7 1px;
+}
+
+.left ul li:last-child {
+    border-right: none;
+}
+
+.half {
+    width: 30%;
+}
+
+footer div div, .disclaimer {
+    margin: 0 10%;
+    padding: 34px 0 0 0;
+}
+
+footer div div a {
+    color: #e1e4e7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+footer div div h4 {
+    padding-bottom: 0.1%;
+}
+
+footer div p {
+    color: #e1e4e7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    padding-top: 1%;
+}
+
+footer div h4 a:hover {
+    font-size: 16px;
+}
+
+.left {
+    float: left;
+}
+
+.left a {
+    text-decoration: none;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.right a {
+    padding-right: 0.75%;
+}
+
+.right a:last-child {
+    padding-right: 0;
+}
+
+.disclaimer {
+    padding: 20px 0 20px 0;
+    clear: both;
+}
     
 }
