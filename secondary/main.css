@@ -811,14 +811,19 @@ footer {
     border-right: none;
 }
 
-.half {
-    width: 30%;
+/* Mobile-specific changes */
+
+.mobile-full {
+    width: 90%;
+    text-align: center;
 }
 
 footer div div, .disclaimer {
-    margin: 0 10%;
+    margin: 0 5%;
     padding: 34px 0 0 0;
 }
+
+/*Mobile spesific changes end */
 
 footer div div a {
     color: #e1e4e7;
@@ -841,18 +846,26 @@ footer div h4 a:hover {
     font-size: 16px;
 }
 
+/* Mobile-specific changes */
+
 .left {
-    float: left;
+    float: center;
 }
+
+/*Mobile spesific changes end */
 
 .left a {
     text-decoration: none;
 }
 
+/* Mobile-specific changes */
+
 .right {
-    float: right;
-    text-align: right;
+    float: center;
+    text-align: center;
 }
+
+/*Mobile spesific changes end */
 
 .right a {
     padding-right: 0.75%;
@@ -982,19 +995,19 @@ footer {
     padding-right: 1%;
     border-right: solid #e1e4e7 1px;
 }
+/* Mobile-specific changes */
 
-.left ul li:last-child {
-    border-right: none;
-}
-
-.half {
-    width: 30%;
+.mobile-full {
+    width: 90%;
+    text-align: center;
 }
 
 footer div div, .disclaimer {
-    margin: 0 10%;
+    margin: 0 5%;
     padding: 34px 0 0 0;
 }
+
+/*Mobile spesific changes end */
 
 footer div div a {
     color: #e1e4e7;
@@ -1017,18 +1030,26 @@ footer div h4 a:hover {
     font-size: 16px;
 }
 
+/* Mobile-specific changes */
+
 .left {
-    float: left;
+    float: center;
 }
+
+/*Mobile spesific changes end */
 
 .left a {
     text-decoration: none;
 }
 
+/* Mobile-specific changes */
+
 .right {
-    float: right;
-    text-align: right;
+    float: center;
+    text-align: center;
 }
+
+/*Mobile spesific changes end */
 
 .right a {
     padding-right: 0.75%;
@@ -1042,5 +1063,5 @@ footer div h4 a:hover {
     padding: 20px 0 20px 0;
     clear: both;
 }
-    
+
 }
