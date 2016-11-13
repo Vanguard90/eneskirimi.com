@@ -83,6 +83,7 @@ header div {
     width: 25%;
     padding-right: 5%;
     position: relative;
+    display: inline;
 }
 
 header div img.first-image {
@@ -114,6 +115,22 @@ header ol li {
     color: rgba(39,52,46,1);
     text-shadow: 2px 2px 2px #ffffff;
     font-size: 16px;
+    width: 20%;
+}
+
+.header-element-11, .header-element-12, .header-element-13 {
+
+    display: none;
+    width: inherit;
+    position: absolute;
+
+}
+
+.header-element:hover > .header-element-11, .header-element:hover > .header-element-12, .header-element:hover > .header-element-13 {
+
+    display: list-item;
+    width: inherit;
+    position: relative;
 }
 
 body {
