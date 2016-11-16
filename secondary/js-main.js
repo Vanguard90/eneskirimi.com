@@ -27,8 +27,8 @@ function leaf1 () {
 	var headerDiv = document.getElementById("header-div");
 	var thirdImage = document.getElementsByClassName("third-image");
 
-	headerDiv.removeChild(secondImage);
-	headerDiv.removeChild(thirdImage);
+	secondImage.remove();
+	thirdImage.remove();
 
 }
 

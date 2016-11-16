@@ -44,35 +44,8 @@ header {
     background: #ffffff;
     min-height: 50px;
     width: 100%;
-    position: absolute;
+    position: default;
     z-index: 1;
-}
-
-@keyframes header-logo {
-
-    0% {
-    opacity:1;
-  }
-  25% {
-    opacity:1;
-  }
-  92% {
-    opacity:1;
-  }
-  100% {
-    opacity:1;
-  }
-
-}
-
-header div:nth-of-type(1) {
-  animation-delay: 6s;
-}
-header div:nth-of-type(2) {
-  animation-delay: 3s;
-}
-header div:nth-of-type(3) {
-  animation-delay: 0s;
 }
 
 header div {
@@ -83,19 +56,21 @@ header div {
     display: inline;
 }
 
-header div img.first-image {
+header div img.first-image, header div img.second-image, header div img.third-image {
 
     position: absolute;
-    transition: opacity 0.1s ease-in-out;
-    animation-name: header-logo;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
+}
+
+.header-element {
+
+    font-size: 16px;
+    font-weight: 900;
 }
 
 header ol {
 
-    position: relative;
     text-decoration: none;
+    position: relative;
     display: inline;
     width: 75%;
 }
@@ -107,7 +82,7 @@ header ol li:last-child {
 
 header ol li {
 
-    display: inherit;
+    display: relative;
     padding-right: 5%;
     color: rgba(39,52,46,1);
     text-shadow: 2px 2px 2px #ffffff;
