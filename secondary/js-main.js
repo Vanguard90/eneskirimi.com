@@ -8,6 +8,8 @@ for (i = 0; i < buttonClick.length; i++) {
 
 /* Button click end */
 
+/* Mobile optimization teaser area start */
+
 var windowWidth = parseInt(window.innerWidth);
 
  if (windowWidth <= 700) {
@@ -19,8 +21,35 @@ mobileTeaser.insertBefore(mobileTeaserImage, mobileTeaser.childNodes[0]);
 
 }
 
-/* setInterval(function, milliseconds) */
+/* Mobile optimization teaser area end */
 
+/* Popup js start */
+
+setTimeout(modal, 3000);
+
+var popup = document.getElementsByClassName("popup")[0];
+var close = document.getElementsByClassName("close");
+var header = document.getElementById("header");
+
+function modal () {
+
+popup.style.display = "block";
+header.style.background = "transparent";
+
+}
+
+close[0].addEventListener("click", function clickFunction() {popup.style.display = "none";}, false);
+
+/* Popup js end */
+
+
+/* 
+
+	setInterval(function, milliseconds)
+	setTimeout(function, milliseconds)
+
+ */
+/*
 function leaf1 () {
 
 	var secondImage = document.getElementsByClassName("second-image");
@@ -58,6 +87,7 @@ setInterval(leaf1, 3000);
 setInterval(leaf2, 6000);
 setInterval(leaf3, 9000);
 
+*/
 
  /*
 let mouseover = document.getElementsByClassName("header-element");
