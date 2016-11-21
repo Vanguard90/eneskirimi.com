@@ -3,7 +3,7 @@
 var buttonClick = document.getElementsByClassName("abcd");
 var i;
 for (i = 0; i < buttonClick.length; i++) {
-    buttonClick[i].addEventListener("click", function clickFunction() {alert('This is supposed to work like this.')}, false);
+    buttonClick[i].addEventListener("click", function clickFunction() {alert('This is supposed to go to an another page of this website.')}, false);
 }
 
 /* Button click end */
@@ -34,7 +34,6 @@ var header = document.getElementById("header");
 function modal () {
 
 popup.style.display = "block";
-header.style.background = "transparent";
 
 }
 
