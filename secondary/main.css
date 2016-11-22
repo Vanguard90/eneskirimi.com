@@ -50,10 +50,18 @@ header {
 
 header div {
 
-    width: 20%;
+    width: 5%;
     height: 50px;
     padding-right: 5%;
     display: inline-block;
+    position: relative;
+}
+
+.nav {
+
+    padding-right: 0;
+    display: inline;
+    width: 90%;
 }
 
 header div img.first-image, header div img.second-image, header div img.third-image {
@@ -64,25 +72,27 @@ header div img.first-image, header div img.second-image, header div img.third-im
 .header-element {
 
     font-size: 16px;
+    width: 10%;
     font-weight: 900;
     display: inline;
+    padding-top: 1%;
 }
 
-header ol {
+header div ol {
 
     list-style-type:none;
     position: relative;
-    width: 75%;
+    width: 85%;
     display: inline-block;
     float: right;
 }
 
-header ol li:last-child {
+header div ol li:last-child {
 
     padding-right: 0;
 }
 
-header ol li {
+header div ol li {
 
     position: relative;
     display: inline;
@@ -90,7 +100,9 @@ header ol li {
     color: rgba(39,52,46,1);
     text-shadow: 2px 2px 2px #ffffff;
     font-size: 16px;
-    width: 25%;
+    width: 30%;
+    float: left;
+
 }
 
 .header-element-11, .header-element-12, .header-element-13 {

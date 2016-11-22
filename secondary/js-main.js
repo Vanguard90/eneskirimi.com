@@ -8,6 +8,16 @@ for (i = 0; i < buttonClick.length; i++) {
 
 /* Button click end */
 
+/* No link click event start */
+
+var buttonClick = document.getElementsByClassName("noLink");
+var i;
+for (i = 0; i < buttonClick.length; i++) {
+    buttonClick[i].addEventListener("click", function clickFunction() {alert('This link is not the link you are looking for.')}, false);
+}
+
+/* No link click event end */
+
 /* Mobile optimization teaser area start */
 
 var windowWidth = parseInt(window.innerWidth);
