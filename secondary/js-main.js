@@ -18,6 +18,20 @@ for (i = 0; i < buttonClick.length; i++) {
 
 /* No link click event end */
 
+
+/* Header hover area start */
+
+var headerHover = document.getElementsByClassName("header-element");
+var headerElement11 = document.getElementsByClassName("header-element-11");
+var headerElement12 = document.getElementsByClassName("header-element-12");
+var headerElement13 = document.getElementsByClassName("header-element-13");
+
+headerHover[0].addEventListener("mouseover", function hoverFunction() { headerElement11.style.display = "block"; }, false);
+headerHover[1].addEventListener("mouseover", function hoverFunction() { headerElement12.style.display = "block"; }, false);
+headerHover[2].addEventListener("mouseover", function hoverFunction() { headerElement13.style.display = "block"; }, false);
+
+/* Header hover area end */
+
 /* Mobile optimization teaser area start */
 
 var windowWidth = parseInt(window.innerWidth);

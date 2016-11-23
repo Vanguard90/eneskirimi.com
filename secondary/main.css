@@ -39,6 +39,11 @@ time, mark, audio, video {
   src: url("fonts/garamond/Garamond.ttf");
 }
 
+@font-face {
+  font-family: "Anson";
+  src: url("/fonts/anson/Anson-Regular.otf");
+}
+
 header {
 
     background: #ffffff;
@@ -85,6 +90,7 @@ header div ol {
     width: 85%;
     display: inline-block;
     float: right;
+    font-family: "Anson", sans-serif;
 }
 
 header div ol li:last-child {
