@@ -83,32 +83,38 @@ header div img.first-image, header div img.second-image, header div img.third-im
     padding-top: 1%;
 }
 
-header div ol {
+header ol {
 
     list-style-type:none;
     position: relative;
-    width: 85%;
+    width: 90%;
     display: inline-block;
     float: right;
     font-family: "Anson", sans-serif;
+    height: 50px;
 }
 
-header div ol li:last-child {
+header ol li:last-child {
 
     padding-right: 0;
 }
 
-header div ol li {
+header ol li {
 
     position: relative;
     display: inline;
-    padding-right: 5%;
-    color: rgba(39,52,46,1);
-    text-shadow: 2px 2px 2px #ffffff;
-    font-size: 16px;
+    padding-right: 1%;
     width: 30%;
     float: left;
 
+}
+
+header ol li a {
+
+    color: rgba(39,52,46,1);
+    text-shadow: 2px 2px 2px #ffffff;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .header-element-11, .header-element-12, .header-element-13 {
@@ -117,6 +123,21 @@ header div ol li {
     width: inherit;
     position: relative;
 
+}
+
+header ol li:hover .header-element-11, header ol li:hover .header-element-12, header ol li:hover .header-element-13 {
+
+    display: block;
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff;
+    padding: 15px 5px 5px 5px;
+}
+
+.header-element-11, .header-element-12, .header-element-13 {
+
+    font-weight: 500;
+    padding-top: 20px;
 }
 
 .popup {
