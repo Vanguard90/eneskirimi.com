@@ -41,13 +41,13 @@ time, mark, audio, video {
 
 @font-face {
   font-family: "Anson";
-  src: url("/fonts/anson/Anson-Regular.otf");
+  src: url("fonts/anson/Anson-Regular.otf");
 }
 
 header {
 
-    background: #ffffff;
-    min-height: 50px;
+    background: rgba(39,52,46,0.7);
+    height: 50px;
     width: 100%;
     z-index: 1;
     position: absolute;
@@ -57,7 +57,7 @@ header div {
 
     width: 5%;
     height: 50px;
-    padding-right: 5%;
+    padding-right: 2%;
     display: inline-block;
     position: relative;
 }
@@ -66,7 +66,6 @@ header div {
 
     padding-right: 0;
     display: inline;
-    width: 90%;
 }
 
 header div img.first-image, header div img.second-image, header div img.third-image {
@@ -77,43 +76,50 @@ header div img.first-image, header div img.second-image, header div img.third-im
 .header-element {
 
     font-size: 16px;
-    width: 10%;
+    max-width: 7%;
     font-weight: 900;
     display: inline;
-    padding-top: 1%;
+    margin-top: 0.5%;
+    padding: 0 0.4%;
 }
 
 header ol {
 
     list-style-type:none;
     position: relative;
-    width: 90%;
+    width: 93%;
     display: inline-block;
     float: right;
     font-family: "Anson", sans-serif;
     height: 50px;
+    margin-top: 0.5%;
 }
 
 header ol li:last-child {
 
-    padding-right: 0;
+    margin-right: 0;
 }
 
 header ol li {
 
     position: relative;
     display: inline;
-    padding-right: 1%;
-    width: 30%;
     float: left;
+    border-right: 1px solid #e1e4e7;
+    text-align: center;
+    vertical-align: middle;
 
+}
+
+header ol li:first-child {
+
+    border-left: 1px solid #e1e4e7;
 }
 
 header ol li a {
 
-    color: rgba(39,52,46,1);
-    text-shadow: 2px 2px 2px #ffffff;
-    font-size: 14px;
+    color: #e1e4e7;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -129,6 +135,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 
     display: block;
     position: absolute;
+    width: 90%;
     z-index: 2;
     background-color: #ffffff;
     padding: 15px 5px 5px 5px;
@@ -154,6 +161,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 .popup-content {
 
     background-color: #fefefe;
+    overflow: hidden;
     margin: 15% auto;
     padding: 0 1%;
     border: 1px solid #888888;
@@ -168,15 +176,24 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 .popup-content p {
 
     font-family: "Roboto", sans-serif;
-    font-size: 32px;
+    font-size: 16px;
     color: rgb(39,52,46);
     font-weight: bold;
-    padding: 3% 0 2% 0;
+    padding: 0 0 2% 0;
+    display: block;
+    float: left;
+}
+
+.popup-content p:first-child {
+
+    padding-top: 3%;
+    width: 90%;
+    float: left;
 }
 
 .popup-content p span {
 
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .close {
@@ -445,6 +462,71 @@ footer div h4 a:hover {
 @font-face {
   font-family: "Garamond";
   src: url("fonts/garamond/Garamond.ttf");
+}
+
+.popup {
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black */
+}
+
+.popup-content {
+
+    background-color: #fefefe;
+    overflow: hidden;
+    margin: 15% auto;
+    padding: 0 1%;
+    border: 1px solid #888888;
+    width: 85%;
+}
+
+.popup-content span {
+
+    padding-top: 0.5%;
+}
+
+.popup-content p {
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: rgb(39,52,46);
+    font-weight: bold;
+    padding: 0 0 2% 0;
+    display: block;
+    float: left;
+}
+
+.popup-content p:first-child {
+
+    padding-top: 3%;
+    width: 90%;
+    float: left;
+}
+
+.popup-content p span {
+
+    font-size: 12px;
+}
+
+.close {
+
+    float: right;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.close:hover,
+.close:focus {
+    color: #27342e;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 main {
@@ -718,21 +800,88 @@ footer div h4 a:hover {
   font-family: "Garamond";
   src: url("fonts/garamond/Garamond.ttf");
 }
+
+.popup {
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black */
+}
+
+.popup-content {
+
+    background-color: #fefefe;
+    overflow: hidden;
+    margin: 15% auto;
+    padding: 0 1%;
+    border: 1px solid #888888;
+    width: 85%;
+}
+
+.popup-content span {
+
+    padding-top: 0.5%;
+}
+
+.popup-content p {
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: rgb(39,52,46);
+    font-weight: bold;
+    padding: 0 0 2% 0;
+    display: block;
+    float: left;
+}
+
+.popup-content p:first-child {
+
+    padding-top: 3%;
+    width: 90%;
+    float: left;
+}
+
+.popup-content p span {
+
+    font-size: 11px;
+}
+
+.close {
+
+    float: right;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.close:hover,
+.close:focus {
+    color: #27342e;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+}
     
-    .masthead {
-        background-image: url(img/masthead/trees-masthead-700x350.jpg);
-        height: 350px;
-        background-position: center bottom;
-        background-size: cover;
-    }
+.masthead {
+    background-image: url(img/masthead/trees-masthead-700x350.jpg);
+    height: 350px;
+    background-position: center bottom;
+    background-size: cover;
+}
     
-    h1, h2 {
+h1, h2 {
     text-align: center;
     font-family: "Roboto", sans-serif;
     color: #e1e4e7;
     text-shadow: 0.8px 0.8px #4d4d4d;
+
 }
-    h1 {
+
+h1 {
     padding-top: 22%;
     font-size: 36px;
     padding-bottom: 0.3%;
@@ -740,10 +889,10 @@ footer div h4 a:hover {
     text-shadow: 0px 0.8px #4d4d4d;
 }
 
-    h2 {
+h2 {
     font-size: 28px;
     font-weight: 350;
-    }
+}
 
 .main-section {
     display: block;
@@ -979,22 +1128,87 @@ footer div h4 a:hover {
   font-family: "Garamond";
   src: url("fonts/garamond/Garamond.ttf");
 }
+
+.popup {
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black */
+}
+
+.popup-content {
+
+    background-color: #fefefe;
+    overflow: hidden;
+    margin: 15% auto;
+    padding: 0 1%;
+    border: 1px solid #888888;
+    width: 85%;
+}
+
+.popup-content span {
+
+    padding-top: 0.5%;
+}
+
+.popup-content p {
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: rgb(39,52,46);
+    font-weight: bold;
+    padding: 0 0 2% 0;
+    display: block;
+    float: left;
+}
+
+.popup-content p:first-child {
+
+    padding-top: 3%;
+    width: 90%;
+    float: left;
+}
+
+.popup-content p span {
+
+    font-size: 11px;
+}
+
+.close {
+
+    float: right;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.close:hover,
+.close:focus {
+    color: #27342e;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.masthead {
+    background-image: url(img/masthead/trees-masthead-450x350.jpg);
+    height: 350px;
+    background-position: center bottom;
+    background-size: cover;
+}
     
-    .masthead {
-        background-image: url(img/masthead/trees-masthead-450x350.jpg);
-        height: 350px;
-        background-position: center bottom;
-        background-size: cover;
-    }
-    
-    h1, h2 {
+h1, h2 {
     text-align: center;
     font-family: "Roboto", sans-serif;
     color: #e1e4e7;
     text-shadow: 0.8px 0.8px #4d4d4d;
 }
     
-    h1 {
+h1 {
     padding-top: 32%;
     font-size: 32px;
     padding-bottom: 0.3%;
