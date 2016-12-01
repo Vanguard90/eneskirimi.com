@@ -55,17 +55,11 @@ header {
 
 header div {
 
-    width: 5%;
+    width: 2%;
     height: 50px;
-    padding-right: 2%;
+    padding-right: 1%;
     display: inline-block;
     position: relative;
-}
-
-.nav {
-
-    padding-right: 0;
-    display: inline;
 }
 
 header div img.first-image, header div img.second-image, header div img.third-image {
@@ -87,7 +81,7 @@ header ol {
 
     list-style-type:none;
     position: relative;
-    width: 93%;
+    width: 95%;
     display: inline-block;
     float: right;
     font-family: "Anson", sans-serif;
@@ -486,12 +480,6 @@ header div {
     padding-right: 4%;
     display: inline-block;
     position: relative;
-}
-
-.nav {
-
-    padding-right: 0;
-    display: inline;
 }
 
 header div img.first-image, header div img.second-image, header div img.third-image {
@@ -914,6 +902,104 @@ footer div h4 a:hover {
 @font-face {
   font-family: "Garamond";
   src: url("fonts/garamond/Garamond.ttf");
+}
+
+header {
+
+    background: rgba(39,52,46,0.7);
+    min-height: 50px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+header div {
+
+    width: 0%;
+    height: 50px;
+    padding-right: 0%;
+    display: block;
+}
+
+header div img.first-image, header div img.second-image, header div img.third-image {
+
+    position: absolute;
+}
+
+.header-element {
+
+    font-size: 16px;
+    width: 100%;
+    font-weight: 900;
+    margin-top: 0.5%;
+    padding: 0 0.4%;
+}
+
+header ol {
+
+    list-style-type:none;
+    position: relative;
+    display: block;
+    float: right;
+    font-family: "Anson", sans-serif;
+    min-height: 50px;
+    margin-top: 0.4%;
+    width: 100%;
+}
+
+header ol li:last-child {
+
+    margin-right: 0;
+}
+
+header ol li {
+
+    position: relative;
+    display: block;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 1%;
+}
+
+header ol li a {
+
+    color: #e1e4e7;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header-element ul li a {
+
+    color: #27342e;
+}
+
+.header-element-11, .header-element-12, .header-element-13 {
+
+    display: none;
+    width: inherit;
+    position: relative;
+
+}
+
+header ol li:hover .header-element-11, header ol li:hover .header-element-12, header ol li:hover .header-element-13 {
+
+    display: block;
+    width: 100%;
+    z-index: 2;
+    background-color: #ffffff;
+    padding: 15px 5px 5px 5px;
+}
+
+.header-element-11, .header-element-12, .header-element-13 {
+
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.nav:before {
+
+    content: "\2630";
 }
 
 .popup {
