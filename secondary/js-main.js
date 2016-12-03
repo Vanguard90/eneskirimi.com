@@ -8,6 +8,40 @@ for (i = 0; i < buttonClick.length; i++) {
 
 /* Button click end */
 
+/* Header image rotation start */
+
+var images = [], x = 0;
+images[0] = "img/header/leaf1-thumbnail.jpg";
+images[1] = "img/header/leaf2-thumbnail.jpg";
+images[2] = "img/header/leaf3-thumbnail.jpg";
+
+var alttext = [];
+alttext[0] = "single-green-leaf";
+alttext[1] = "double-green-leaf";
+alttext[2] = "triple-green-leaf";
+
+function nextimage() {
+
+    var selectedImg = document.getElementById("logo-image");
+    selectedImg.src = images[x];
+    selectedImg.alt = alttext[x];
+    x++;
+
+    if(x >= images.length){
+        x = 0;
+    }
+}
+
+setInterval(nextimage, 3000);
+
+/* Header image rotation end */
+
+/* Mobile header area start */
+
+
+
+/* Mob'le header area end */
+
 /* No link click event start */
 
 var buttonClick = document.getElementsByClassName("noLink");
@@ -58,45 +92,6 @@ close[0].addEventListener("click", function clickFunction() {popup.style.display
 	setTimeout(function, milliseconds)
 
  */
-/*
-function leaf1 () {
-
-	var secondImage = document.getElementsByClassName("second-image");
-	var headerDiv = document.getElementById("header-div");
-	var thirdImage = document.getElementsByClassName("third-image");
-
-	secondImage.remove();
-	thirdImage.remove();
-
-}
-
-function leaf2 () {
-
-	var firstImage = document.getElementsByClassName("first-image");
-	var headerDiv = document.getElementById("header-div");
-	var thirdImage = document.getElementsByClassName("third-image");
-
-	headerDiv.removeChild(firstImage);
-	headerDiv.removeChild(thirdImage);
-
-}
-
-function leaf3 () {
-
-	var firstImage = document.getElementsByClassName("first-image");
-	var headerDiv = document.getElementById("header-div");
-	var thirdImage = document.getElementsByClassName("third-image");
-
-	headerDiv.removeChild(firstImage);
-	headerDiv.removeChild(secondImage);
-
-}
-
-setInterval(leaf1, 3000);
-setInterval(leaf2, 6000);
-setInterval(leaf3, 9000);
-
-*/
 
  /*
 let mouseover = document.getElementsByClassName("header-element");

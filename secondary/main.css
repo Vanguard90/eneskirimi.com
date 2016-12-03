@@ -915,10 +915,10 @@ header {
 
 header div {
 
-    width: 0%;
+    width: 49%;
     height: 50px;
     padding-right: 0%;
-    display: block;
+    display: inline-block;
 }
 
 header div img.first-image, header div img.second-image, header div img.third-image {
@@ -997,9 +997,30 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     padding-top: 20px;
 }
 
-.nav:before {
+.hamburger-menu {
 
-    content: "\2630";
+    width: 20%;
+    position: inline-block;
+}
+
+.box-shadow-menu {
+  position: relative;
+  padding-right: 40px;
+  height: 50px;
+  float: right;
+}
+.box-shadow-menu:before {
+  content: "";
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 24px;
+  height: 1.5px;
+  background: black;
+  box-shadow: 
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
 }
 
 .popup {
