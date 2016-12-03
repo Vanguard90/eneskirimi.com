@@ -38,9 +38,19 @@ setInterval(nextimage, 3000);
 
 /* Mobile header area start */
 
+var windowWidth = parseInt(window.innerWidth);
+
+if (windowWidth > 700) {
+
+let headerTag = document.getElementsByTagName("header")[0];
+let hamburgerMenu = document.getElementsByClassName("mobile-hamburger")[0];
+
+headerTag.removeChild(hamburgerMenu);
+
+}
 
 
-/* Mob'le header area end */
+/* Mobile header area end */
 
 /* No link click event start */
 
