@@ -997,30 +997,23 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     padding-top: 20px;
 }
 
-.hamburger-menu {
+.mobile-hamburger {
 
-    width: 20%;
-    position: inline-block;
+    height: 50px;
 }
 
-.box-shadow-menu {
+.hamburger-menu {
   position: relative;
-  padding-right: 40px;
-  height: 50px;
+  padding-right: 3%;
+  padding-top: 2%;
+  height: 13%;
+  width: 15%;
   float: right;
 }
-.box-shadow-menu:before {
-  content: "";
-  text-align: center;
-  position: absolute;
-  left: 0;
-  top: 20px;
-  width: 24px;
-  height: 1.5px;
-  background: black;
-  box-shadow: 
-    0 0.25em 0 0 black,
-    0 0.5em 0 0 black;
+
+.nav {
+
+    display: none;
 }
 
 .popup {
