@@ -999,16 +999,21 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 
 .mobile-hamburger {
 
-    height: 50px;
+    min-height: 50px;
 }
 
 .hamburger-menu {
   position: relative;
   padding-right: 3%;
-  padding-top: 2%;
-  height: 13%;
+  padding-top: 0px;
+  height: 12%;
   width: 15%;
   float: right;
+}
+
+.hamburger-image {
+
+    vertical-align: center;
 }
 
 .nav {

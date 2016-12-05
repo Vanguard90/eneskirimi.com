@@ -1,3 +1,12 @@
+/* Window resize reload start */
+
+window.addEventListener('resize', function () { 
+    "use strict";
+    window.location.reload(); 
+});
+
+/* Window resize reload end */
+
 /* Button click start */
 
 var buttonClick = document.getElementsByClassName("abcd");
