@@ -62,6 +62,8 @@ headerTag.removeChild(hamburgerMenu);
 
 /* Mobile hamburger click start */
 
+if (windowWidth < 701) {
+
 let hamburgerImage = document.getElementsByClassName("hamburger-image");
 let nav = document.getElementsByClassName("nav");
 let imgTag = document.getElementsByTagName("img")[1];
@@ -88,6 +90,8 @@ if (imgTag.classList.contains('hamburger-active')) {
 
 }
 
+}
+
 /*Mobile hamburger click end */
 
 /* No link click event start */
@@ -95,6 +99,7 @@ if (imgTag.classList.contains('hamburger-active')) {
 var buttonClick = document.getElementsByClassName("noLink");
 var i;
 for (i = 0; i < buttonClick.length; i++) {
+	
     buttonClick[i].addEventListener("click", function clickFunction() {alert('This link is not the link you are looking for.')}, false);
 }
 
