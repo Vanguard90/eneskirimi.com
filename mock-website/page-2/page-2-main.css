@@ -291,6 +291,7 @@ ul {
 
 h3 {
     font-family: "Roboto", sans-serif;
+    font-size: 24px;
     padding-bottom: 20px;
 }
 
@@ -299,13 +300,22 @@ p {
     font-family: "Garamond", serif;
 }
 
+.video-masthead {
+
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    background-attachment: fixed;
+}
+
 .wrapper {
-    background-color:rgba(39,52,46,1);
+    background: linear-gradient(-90deg, #27342e, transparent);
     padding: 20px 0 20px 0;
 }
 
 .wrapper-vanilla {
-    background-color: transparent;
+
+    background: linear-gradient(90deg, #27342e, transparent);
 }
 
 .teaser {
@@ -686,6 +696,7 @@ h1, h2 {
     width: 100%;
     padding: 3% 0.5%;
     margin: 0 auto;
+    opacity: 0;
 }
 
 ul {
@@ -713,12 +724,6 @@ ul {
 h3 {
     font-family: "Roboto", sans-serif;
     padding-bottom: 20px;
-}
-
-.resize {
-    
-    width: 150px;
-    height: 150px;
 }
 
 p {
@@ -1140,6 +1145,7 @@ h2 {
     width: 100%;
     padding: 3% 1%;
     margin: 0 auto;
+    opacity: 0;
 }
 
 ul {
@@ -1171,12 +1177,6 @@ h3 {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     padding-bottom: 20px;
-}
-
-.resize {
-    
-    width: 200px;
-    height: 200px;
 }
 
 p {
@@ -1590,6 +1590,7 @@ h2 {
     width: 100%;
     padding: 3% 1%;
     margin: 0 auto;
+    opacity: 0;
 }
 
 ul {
@@ -1621,12 +1622,6 @@ h3 {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     padding-bottom: 20px;
-}
-
-.resize {
-    
-    width: 200px;
-    height: 200px;
 }
 
 p {
