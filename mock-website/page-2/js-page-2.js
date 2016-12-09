@@ -94,6 +94,27 @@ if (imgTag.classList.contains('hamburger-active')) {
 
 /*Mobile hamburger click end */
 
+/* Fade in/fade out start */
+
+var fadeAnchor = document.getElementsByClassName("main-section");
+
+window.addEventListener("scroll", function() {
+  fadeAnchor[0].style.opacity = (document.documentElement.scrollTop / 800);
+})
+
+if (windowWidth <= 700) {
+
+var fadeAnchor = document.getElementsByClassName("main-section");
+
+window.addEventListener("scroll", function() {
+  fadeAnchor[0].style.opacity = (document.documentElement.scrollTop / 400);
+})
+
+}
+
+/* Fade in/fade out end */
+
+
 /* No link click event start */
 
 var buttonClick = document.getElementsByClassName("noLink");
@@ -121,7 +142,7 @@ mobileTeaser.insertBefore(mobileTeaserImage, mobileTeaser.childNodes[0]);
 /* Mobile optimization teaser area end */
 
 /* Popup js start */
-
+/*
 setTimeout(modal, 3000);
 
 var popup = document.getElementsByClassName("popup")[0];
@@ -135,7 +156,7 @@ popup.style.display = "block";
 }
 
 close[0].addEventListener("click", function clickFunction() {popup.style.display = "none";}, false);
-
+*/
 /* Popup js end */
 
 

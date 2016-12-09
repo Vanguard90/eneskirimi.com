@@ -251,6 +251,7 @@ h1 {
     font-size: 48px;
     font-weight: 700;
     text-shadow: 0px 0.8px #4d4d4d;
+    padding-bottom: 0.3%;
 }
 
 h2 {
@@ -263,6 +264,7 @@ h2 {
     width: 960px;
     padding: 3em 1em;
     margin: 0 auto;
+    opacity: 0;
 }
 
 ul {
@@ -276,31 +278,20 @@ ul {
 }
 
 .wood-1{
-    width: 30%;
+    width: 45%;
     padding-right: 1.25%;
     position:relative;
 }
 
 .wood-2{
-    width: 30%;
+    width: 45%;
     padding: 0 1.25% 0 1.25%;
-    position:relative;
-}
-
-.wood-3{
-    width: 30%;
-    padding-left: 1.25%;
     position:relative;
 }
 
 h3 {
     font-family: "Roboto", sans-serif;
     padding-bottom: 20px;
-}
-
-.img-circle {
-    border-radius: 50%;
-    box-shadow: 0 0 8px #4d4d4d;
 }
 
 p {
@@ -653,21 +644,32 @@ main {
 }
 
 .masthead {
-        background-image: url(../img/masthead/trees-masthead-960x600.jpg);
+        background-image: url(../img/masthead/page-2/forest-road-960x600.jpg);
         height: 600px;
         background-position: center bottom;
         background-size: cover;
-    }
+        background-attachment: fixed;
+}
+
+
+.title-background {
+
+    position: absolute;
+    top: 14%;
+    background-color: rgba(40,46,52,0.7);
+    width: 100%;
+    padding: 2% 0;
+}
     
 h1, h2 {
     text-align: center;
     font-family: "Roboto", sans-serif;
     color: #e1e4e7;
     text-shadow: 0.8px 0.8px #4d4d4d;
+    position: relative;
 }
     
     h1 {
-    padding-top: 22%;
     font-size: 42px;
     padding-bottom: 0.3%;
     font-weight: 700;
@@ -697,31 +699,20 @@ ul {
 }
 
 .wood-1{
-    width: 30%;
+    width: 45%;
     padding-right: 1.25%;
     position:relative;
 }
 
 .wood-2{
-    width: 30%;
+    width: 45%;
     padding: 0 1.25% 0 1.25%;
-    position:relative;
-}
-
-.wood-3{
-    width: 30%;
-    padding-left: 1.25%;
     position:relative;
 }
 
 h3 {
     font-family: "Roboto", sans-serif;
     padding-bottom: 20px;
-}
-
-.img-circle {
-    border-radius: 50%;
-    box-shadow: 0 0 8px #4d4d4d;
 }
 
 .resize {
@@ -1107,10 +1098,21 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 }
     
 .masthead {
-    background-image: url(../img/masthead/trees-masthead-700x350.jpg);
-    height: 350px;
+    background-image: url(../img/masthead/page-2/forest-road-700x450.jpg);
+    height: 450px;
     background-position: center bottom;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.title-background {
+
+    position: absolute;
+    top: 40%;
+    background-color: rgba(40,46,52,0.7);
+    width: 100%;
+    padding: 2% 0;
 }
     
 h1, h2 {
@@ -1122,7 +1124,6 @@ h1, h2 {
 }
 
 h1 {
-    padding-top: 22%;
     font-size: 36px;
     padding-bottom: 0.3%;
     font-weight: 700;
@@ -1166,20 +1167,10 @@ ul {
     position:relative;
 }
 
-.wood-3{
-    width: 98%;
-    position:relative;
-}
-
 h3 {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     padding-bottom: 20px;
-}
-
-.img-circle {
-    border-radius: 50%;
-    box-shadow: 0 0 8px #4d4d4d;
 }
 
 .resize {
@@ -1558,10 +1549,21 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 }
 
 .masthead {
-    background-image: url(../img/masthead/trees-masthead-450x350.jpg);
-    height: 350px;
+    background-image: url(../img/masthead/page-2/forest-road-450x450.jpg);
+    height: 450px;
     background-position: center bottom;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.title-background {
+
+    position: absolute;
+    top: 40%;
+    background-color: rgba(40,46,52,0.7);
+    width: 100%;
+    padding: 2% 0;
 }
     
 h1, h2 {
@@ -1572,15 +1574,14 @@ h1, h2 {
 }
     
 h1 {
-    padding-top: 32%;
-    font-size: 32px;
+    font-size: 26px;
     padding-bottom: 0.3%;
     font-weight: 700;
     text-shadow: 0px 0.8px #4d4d4d;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 }
     
@@ -1616,20 +1617,10 @@ ul {
     position:relative;
 }
 
-.wood-3{
-    width: 98%;
-    position:relative;
-}
-
 h3 {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     padding-bottom: 20px;
-}
-
-.img-circle {
-    border-radius: 50%;
-    box-shadow: 0 0 8px #4d4d4d;
 }
 
 .resize {
