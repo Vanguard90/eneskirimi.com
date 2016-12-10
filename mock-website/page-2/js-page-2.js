@@ -112,7 +112,42 @@ window.addEventListener("scroll", function() {
 
 }
 
+// for chrome
+
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+if (isChrome) {
+
+window.addEventListener("scroll", function() {
+  fadeAnchor[0].style.opacity = (window.pageYOffset / 800);
+})
+
+if (windowWidth <= 700) {
+
+var fadeAnchor = document.getElementsByClassName("main-section");
+
+window.addEventListener("scroll", function() {
+  fadeAnchor[0].style.opacity = (window.pageYOffset / 400);
+})
+
+}
+
+}
+
 /* Fade in/fade out end */
+
+/* Video M and mobile area start */
+
+if ( 960 < windowWidth && windowWidth < 1367 ) {
+
+   var videoTag = document.getElementsByClassName("video");
+   var videoSource = document.getElementsByClassName("video-source");
+
+   videoTag[0].setAttribute("poster", "abc.png");
+   videoSource[0].setAttribute("src", "test.mp4");
+}
+
+/* Video M and mobile area end */
 
 
 /* No link click event start */
