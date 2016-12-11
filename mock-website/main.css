@@ -928,6 +928,7 @@ header div {
     height: 50px;
     padding-right: 0%;
     display: inline-block;
+    float: left;
 }
 
 header div img.first-image, header div img.second-image, header div img.third-image {
@@ -1378,6 +1379,7 @@ header div {
     height: 50px;
     padding-right: 0%;
     display: inline-block;
+    float: left;
 }
 
 header div img.first-image, header div img.second-image, header div img.third-image {

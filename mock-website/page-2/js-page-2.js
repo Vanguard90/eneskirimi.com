@@ -136,18 +136,88 @@ window.addEventListener("scroll", function() {
 
 /* Fade in/fade out end */
 
-/* Video M and mobile area start */
+/* Video L,M and mobile area start */
 
 if ( 960 < windowWidth && windowWidth < 1367 ) {
 
-   var videoTag = document.getElementsByClassName("video");
-   var videoSource = document.getElementsByClassName("video-source");
+   var videoTag = document.getElementsByClassName("video")[0];
+   var videoSource = document.getElementsByClassName("video-source")[0];
+   var subtitleBackground = document.getElementsByClassName("subtitle-background")[0];
 
-   videoTag[0].setAttribute("poster", "abc.png");
-   videoSource[0].setAttribute("src", "test.mp4");
+   subtitleBackground.removeChild(videoTag);
+
+   var newVideo = document.createElement("video");
+   var newSource = document.createElement("source");
+   subtitleBackground.appendChild(newVideo);
+   newVideo.className += "video";
+   newVideo.autoplay += "";
+   newVideo.loop += "";
+   newVideo.muted += "";
+   newVideo.poster = "../img/video/video-background-1366x768.jpg";
+   newVideo.preload = "auto";
+   newVideo.alt = "island-thumbnail";
+
+   newVideo.appendChild(newSource);
+
+   newSource.classList += "video-source";
+   newSource.src = "../img/video/video-tree-background-1366x768.mp4";
+   newSource.type = "video/mp4";
+
 }
 
-/* Video M and mobile area end */
+if ( 700 < windowWidth && windowWidth < 961 ) {
+
+   var videoTag = document.getElementsByClassName("video")[0];
+   var videoSource = document.getElementsByClassName("video-source")[0];
+   var subtitleBackground = document.getElementsByClassName("subtitle-background")[0];
+
+    subtitleBackground.removeChild(videoTag);
+
+    var newImg = document.createElement("img");
+
+    subtitleBackground.appendChild(newImg);
+
+    newImg.className += "video";
+    newImg.src = "../img/video/video-background-960x600.jpg";
+    newImg.alt = "tree-island-image";
+}
+
+if ( 450 < windowWidth && windowWidth < 701 ) {
+
+   var videoTag = document.getElementsByClassName("video")[0];
+   var videoSource = document.getElementsByClassName("video-source")[0];
+   var subtitleBackground = document.getElementsByClassName("subtitle-background")[0];
+
+    subtitleBackground.removeChild(videoTag);
+
+    var newImg = document.createElement("img");
+
+    subtitleBackground.appendChild(newImg);
+
+    newImg.className += "video";
+    newImg.src = "../img/video/video-background-700x450.jpg";
+    newImg.alt = "tree-island-image";
+}
+
+if (windowWidth < 451 ) {
+
+   var videoTag = document.getElementsByClassName("video")[0];
+   var videoSource = document.getElementsByClassName("video-source")[0];
+   var subtitleBackground = document.getElementsByClassName("subtitle-background")[0];
+
+    subtitleBackground.removeChild(videoTag);
+
+    var newImg = document.createElement("img");
+
+    subtitleBackground.appendChild(newImg);
+
+    newImg.className += "video";
+    newImg.src = "../img/video/video-background-450x450.jpg";
+    newImg.alt = "tree-island-image";
+}
+
+
+/* Video L,M and mobile area end */
 
 
 /* No link click event start */

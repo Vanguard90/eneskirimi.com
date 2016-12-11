@@ -54,7 +54,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <main>
             <section class="masthead">
             <div class="title-background">
-                <h1>I hate having to come up these titles</h1>
+                <h1>I hate having to come up with these titles</h1>
                 <h2>Made by Enes Kirimi</h2>
             </div>
             </section>
@@ -72,12 +72,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </li>
             </ul>
         </section>
+        <div class="location-header">
+            <h2>Enable your location and see the magic!</h2>
+        </div>
+        <section id="map">
+        </section>
         <section class="video-masthead">
             <div class="subtitle-background">
                 <video class="video" autoplay loop muted poster="..\img\video\video-thumbnail.jpg" preload="auto" alt="island-thumbnail">
                     <source class="video-source" src="..\img\video\video-tree-background.mp4" type="video/mp4">
                 </video>
-                <h3>Now, watch all these cool places and weep!(also trees)</h3>
+                <h3>Now, look at this place you won't visit</h3>
             </div>
         </section>
         <div class="wrapper">
@@ -139,5 +144,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </footer>
         <script src="js-page-2.js"></script>
+        <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 52.132, lng: 5.290},
+          zoom: 7
+        });
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            map.setCenter(pos);
+            var marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            zoom: 14
+        });
+
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+        }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCZ4w09i2Dn33iU9aGlcdkuux8JeTIPVA&callback=initMap">
+        </script>
     </body>
 </html>
