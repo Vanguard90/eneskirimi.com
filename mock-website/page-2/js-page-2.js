@@ -247,21 +247,65 @@ mobileTeaser.insertBefore(mobileTeaserImage, mobileTeaser.childNodes[0]);
 /* Mobile optimization teaser area end */
 
 /* Popup js start */
-/*
-setTimeout(modal, 3000);
 
-var popup = document.getElementsByClassName("popup")[0];
-var close = document.getElementsByClassName("close");
-var header = document.getElementById("header");
+window.onload = checkCookie;
 
-function modal () {
 
-popup.style.display = "block";
+var cookieName = "popup";
+var cookieValue = "seen";
+var cookieDays = 30;
 
+function createCookiePopup (cookieName, cookieValue, cookieDays) {
+
+    var date = new Date();
+    date.setTime(date.getTime() + (cookieDays*24*60*60*1000));
+    var cookieExpire = "expires=" + date.toUTCString();
+    document.cookie = cookieName + "=" + cookieValue + ";" + cookieExpire + ";path=/";
 }
 
-close[0].addEventListener("click", function clickFunction() {popup.style.display = "none";}, false);
-*/
+function getCookie(cookieName) {
+    var name = cookieName + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(cookieName.length, c.length);
+        }
+    }
+    return "";
+}
+
+
+function checkCookie() {
+
+    var user = getCookie(cookieName);
+    if (user != "") {
+
+        popup.style.display = "none";
+
+    } else {
+
+        setTimeout(modal, 3000);
+
+        var popup = document.getElementsByClassName("popup")[0];
+        var close = document.getElementsByClassName("close");
+        var header = document.getElementById("header");
+
+        function modal () {
+
+        popup.style.display = "block";
+
+        createCookiePopup (cookieName, cookieValue, cookieDays);
+        }
+
+        close[0].addEventListener("click", function clickFunction() {popup.style.display = "none";}, false);
+        
+    }
+}
+
 /* Popup js end */
 
 

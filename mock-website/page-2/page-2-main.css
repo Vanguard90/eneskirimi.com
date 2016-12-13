@@ -169,7 +169,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 
 .popup-content span {
 
-    padding-top: 0.5%;
+    padding-top: 0.2%;
 }
 
 .popup-content p {
@@ -178,7 +178,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     font-size: 16px;
     color: rgb(39,52,46);
     font-weight: bold;
-    padding: 0 0 2% 0;
+    padding: 0 0 1% 0;
     display: block;
     float: left;
 }
@@ -188,6 +188,12 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     padding-top: 3%;
     width: 90%;
     float: left;
+}
+
+.popup-content p:last-child {
+
+padding-bottom: 2%;
+
 }
 
 .popup-content p span {
@@ -651,7 +657,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 
 .popup-content span {
 
-    padding-top: 0.5%;
+    padding-top: 0.2%;
 }
 
 .popup-content p {
@@ -660,7 +666,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     font-size: 16px;
     color: rgb(39,52,46);
     font-weight: bold;
-    padding: 0 0 2% 0;
+    padding: 0 0 1% 0;
     display: block;
     float: left;
 }
@@ -670,6 +676,12 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     padding-top: 3%;
     width: 90%;
     float: left;
+}
+
+.popup-content p:last-child {
+
+padding-bottom: 2%;
+
 }
 
 .popup-content p span {
@@ -1157,7 +1169,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 
 .popup-content span {
 
-    padding-top: 0.5%;
+    padding-top: 0.2%;
 }
 
 .popup-content p {
@@ -1166,7 +1178,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     font-size: 14px;
     color: rgb(39,52,46);
     font-weight: bold;
-    padding: 0 0 2% 0;
+    padding: 0 0 1% 0;
     display: block;
     float: left;
 }
@@ -1176,6 +1188,12 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     padding-top: 3%;
     width: 90%;
     float: left;
+}
+
+.popup-content p:last-child {
+
+padding-bottom: 2%;
+
 }
 
 .popup-content p span {
@@ -1659,7 +1677,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
 
 .popup-content span {
 
-    padding-top: 0.5%;
+    padding-top: 0.2%;
 }
 
 .popup-content p {
@@ -1668,7 +1686,7 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     font-size: 14px;
     color: rgb(39,52,46);
     font-weight: bold;
-    padding: 0 0 2% 0;
+    padding: 0 0 1% 0;
     display: block;
     float: left;
 }
@@ -1678,6 +1696,12 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     padding-top: 3%;
     width: 90%;
     float: left;
+}
+
+.popup-content p:last-child {
+
+padding-bottom: 2%;
+
 }
 
 .popup-content p span {
