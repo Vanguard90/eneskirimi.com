@@ -72,6 +72,8 @@ let imgTag = document.getElementsByTagName("img")[1];
 var hamburgerActive = imgTag.classList.contains('hamburger-active');
 var hamburgerInactive = imgTag.classList.contains('hamburger-inactive');
 
+/* FYI - I know I can just use Toggle here. */
+
 setInterval(hamburgerCheck, 0500);
 
 function hamburgerCheck () {
@@ -137,6 +139,8 @@ window.addEventListener("scroll", function() {
 /* Fade in/fade out end */
 
 /* Video L,M and mobile area start */
+
+/*I could've achieved more performance bt adding a base img tag to html and hiding it. Better for SEO too. */
 
 if ( 960 < windowWidth && windowWidth < 1367 ) {
 
@@ -307,28 +311,3 @@ function checkCookie() {
 }
 
 /* Popup js end */
-
-
-/* 
-
-	setInterval(function, milliseconds)
-	setTimeout(function, milliseconds)
-
- */
-
- /*
-let mouseover = document.getElementsByClassName("header-element");
-for (i = 0; i < mouseover.length; i++ ) {
-	mouseover[i].addEventListener("mouseover",function headerMouseOver() {alert ("Mouseover event!");}, false);
-}
-
-
-let mouseout = document.getElementsByClassName("header-element");
-for (i = 0; i < mouseout.length; i++) {
-	mouseout[i].addEventListener("mouseout", function headerMouseOut () {alert ("Mouseout event!");}, false);
-}
-*/
-
-	/*         var h = parseInt(window.innerHeight);
-        var w = parseInt(window.innerWidth);
-        */
