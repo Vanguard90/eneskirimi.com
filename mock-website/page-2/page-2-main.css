@@ -501,6 +501,10 @@ button:active {
 
 }
 
+button a {
+    text-decoration: none;
+}
+
 footer {
     background-color: rgb(61,81,72);
     min-height: 150px;
@@ -1066,6 +1070,10 @@ button:hover {
 button:active {
     background: rgb(225,228,231);
 
+}
+
+button a {
+    text-decoration: none;
 }
 
 footer {
@@ -1648,6 +1656,10 @@ button:active {
 
 }
 
+button a {
+    text-decoration: none;
+}
+
 footer {
     background-color: rgb(61,81,72);
     min-height: 150px;
@@ -2089,7 +2101,7 @@ p {
 
 .teaser-image {
 
-    padding-left: 30%;
+    padding-left: 24%;
     width: 200px;
     height: 200px;
     text-align: center;
@@ -2174,6 +2186,12 @@ img, video {
     vertical-align: middle;
 }
 
+.video {
+
+    max-width: 100%;
+    height: auto;
+}
+
 .image-right {
 
     margin-top: 0px;
@@ -2225,6 +2243,10 @@ button:hover {
 button:active {
     background: rgb(225,228,231);
 
+}
+
+button a {
+    text-decoration: none;
 }
 
 footer {
