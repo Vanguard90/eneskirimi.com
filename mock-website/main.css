@@ -1016,14 +1016,13 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
   position: relative;
   padding-right: 3%;
   padding-top: 0px;
-  height: 12%;
-  width: 15%;
   float: right;
 }
 
 .hamburger-image {
 
     vertical-align: middle;
+    height: 40px;
 }
 
 .nav {
@@ -1467,14 +1466,13 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
   position: relative;
   padding-right: 3%;
   padding-top: 0px;
-  height: 20%;
-  width: 20%;
   float: right;
 }
 
 .hamburger-image {
 
     vertical-align: middle;
+    height: 40px;
 }
 
 .nav {
