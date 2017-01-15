@@ -1,9 +1,6 @@
 /* Window resize reload start */
 
-window.addEventListener('resize', function () { 
-    "use strict";
-    window.location.reload(); 
-});
+window.onresize = () => {window.location.reload;};
 
 /* Window resize reload end */
 
@@ -62,17 +59,32 @@ headerTag.removeChild(hamburgerMenu);
 
 /* Mobile hamburger click start */
 
+let hamImg = document.querySelectorAll(".hamburger-image");
+let nav = document.querySelector(".nav");
+
+function toggleFunction () {
+    this.classList.toggle("hamburger-active");
+    nav.classList.toggle("nav-active");
+    nav.classList.toggle("nav");
+    }
+
 if (windowWidth < 701) {
+
+hamImg.forEach(hamImg => hamImg.addEventListener("click", toggleFunction));
+
+}
+
+/* WALL OF SHAME & PROGRESS */
+/*
+if (windowWidth < 701) {
+
 
 let hamburgerImage = document.getElementsByClassName("hamburger-image");
 let nav = document.getElementsByClassName("nav");
 let imgTag = document.getElementsByTagName("img")[1];
 
-
 var hamburgerActive = imgTag.classList.contains('hamburger-active');
 var hamburgerInactive = imgTag.classList.contains('hamburger-inactive');
-
-/* FYI - I know I can just use Toggle here. */
 
 setInterval(hamburgerCheck, 0500);
 
@@ -93,6 +105,8 @@ if (imgTag.classList.contains('hamburger-active')) {
 }
 
 }
+*/
+/* WALL OF SHAME & PROGRESS */
 
 /*Mobile hamburger click end */
 

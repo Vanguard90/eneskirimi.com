@@ -1290,6 +1290,10 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     display: none;
 }
 
+.nav-active {
+    display: block;
+}
+
 .popup {
 
     display: none;
@@ -1884,6 +1888,9 @@ header ol li:hover .header-element-11, header ol li:hover .header-element-12, he
     display: none;
 }
 
+.nav-active {
+    display: block;
+}
 
 .popup {
 
