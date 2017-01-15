@@ -62,6 +62,25 @@ headerTag.removeChild(hamburgerMenu);
 
 /* Mobile hamburger click start */
 
+let hamImg = document.querySelectorAll(".hamburger-image");
+let nav = document.querySelector(".nav");
+
+function toggleFunction () {
+    this.classList.toggle("hamburger-active");
+    nav.classList.toggle("nav-active");
+    nav.classList.toggle("nav");
+    }
+
+if (windowWidth < 701) {
+
+hamImg.forEach(hamImg => hamImg.addEventListener("click", toggleFunction));
+
+}
+
+
+/* WALL OF SHAME & PROGRESS */
+/*
+
 if (windowWidth < 701) {
 
 let hamburgerImage = document.getElementsByClassName("hamburger-image");
@@ -91,7 +110,8 @@ if (imgTag.classList.contains('hamburger-active')) {
 }
 
 }
-
+*/
+/* WALL OF SHAME & PROGRESS */
 /*Mobile hamburger click end */
 
 /* No link click event start */
