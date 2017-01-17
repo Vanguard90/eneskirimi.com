@@ -30,11 +30,25 @@ main {
 .masthead {
   height: 400px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/masthead/masthead-apples.png);
+  background-position: center bottom;
+  background-size: cover; }
   .masthead h1 {
     width: 70%;
     font-size: 32px;
     font-family: "Open sans";
-    justify-content: center; }
+    font-weight: bold;
+    padding-bottom: 20px; }
+
+.stats {
+  display: flex;
+  flex-direction: column; }
+  .stats li {
+    display: flex;
+    flex-direction: column; }
+  .stats .stat-section {
+    height: 200px; }
 
 /*# sourceMappingURL=style.css.map */
