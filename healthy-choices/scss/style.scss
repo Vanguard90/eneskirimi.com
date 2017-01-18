@@ -24,6 +24,11 @@ $basic-padding: 20px;
   src: url("../fonts/OpenSans-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
+
 body {
 	display: flex;
 }
@@ -60,6 +65,15 @@ main {
 	display: flex;
 	flex-direction: column;
 
+	h2 {
+
+		font-family: "Open sans";
+	}
+
+	p {
+		font-family: "Roboto";
+	}
+
 	li {
 
 		display: flex;
@@ -69,5 +83,12 @@ main {
 	.stat-section {
 
 		height: 200px;
+		display: flex;
+		flex-wrap: nowrap;
+
+		.small {
+
+			font-size: 9px;
+		}
 	}
 }

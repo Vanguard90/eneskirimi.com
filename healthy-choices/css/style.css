@@ -18,6 +18,9 @@ time, mark, audio, video {
 @font-face {
   font-family: "Open sans";
   src: url("../fonts/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
 body {
   display: flex; }
 
@@ -45,10 +48,18 @@ main {
 .stats {
   display: flex;
   flex-direction: column; }
+  .stats h2 {
+    font-family: "Open sans"; }
+  .stats p {
+    font-family: "Roboto"; }
   .stats li {
     display: flex;
     flex-direction: column; }
   .stats .stat-section {
-    height: 200px; }
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap; }
+    .stats .stat-section .small {
+      font-size: 9px; }
 
 /*# sourceMappingURL=style.css.map */
