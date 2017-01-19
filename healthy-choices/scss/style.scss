@@ -29,8 +29,17 @@ $basic-padding: 20px;
   src: url("../fonts/roboto/Roboto-Regular.ttf");
 }
 
+.extendfull {
+
+	margin-right: -4000px;
+	padding-right: 4000px;
+	margin-left: -3000px;
+	padding-left: 3000px;
+}
+
 body {
 	display: flex;
+	overflow-x: hidden;
 }
 
 main {
@@ -68,6 +77,9 @@ main {
 	h2 {
 
 		font-family: "Open sans";
+		font-size: 36px;
+		align-self: center;
+		align-items: center;
 	}
 
 	p {
@@ -77,12 +89,33 @@ main {
 	li {
 
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+
+		div {
+			display: flex;
+		}
+
+		.teaser-text {
+			flex-grow: 3;
+			flex-basis: 576px;
+			align-items: center;
+		}
+
+		.teaser-image {
+			flex-grow: 2;
+			flex-basis: 384px;
+			align-items: center;
+		}
+	}
+
+	li:nth-of-type(odd) {
+
+		background-image: -moz-linear-gradient(left bottom, rgb(110,215,255) 0%, rgb(132,216,255) 42%,rgb(110,215,255) 75%);
 	}
 
 	.stat-section {
 
-		height: 200px;
+		height: 300px;
 		display: flex;
 		flex-wrap: nowrap;
 

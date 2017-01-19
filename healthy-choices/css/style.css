@@ -21,8 +21,15 @@ time, mark, audio, video {
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto/Roboto-Regular.ttf"); }
+.extendfull {
+  margin-right: -4000px;
+  padding-right: 4000px;
+  margin-left: -3000px;
+  padding-left: 3000px; }
+
 body {
-  display: flex; }
+  display: flex;
+  overflow-x: hidden; }
 
 main {
   display: flex;
@@ -49,14 +56,29 @@ main {
   display: flex;
   flex-direction: column; }
   .stats h2 {
-    font-family: "Open sans"; }
+    font-family: "Open sans";
+    font-size: 36px;
+    align-self: center;
+    align-items: center; }
   .stats p {
     font-family: "Roboto"; }
   .stats li {
     display: flex;
-    flex-direction: column; }
+    flex-direction: row; }
+    .stats li div {
+      display: flex; }
+    .stats li .teaser-text {
+      flex-grow: 3;
+      flex-basis: 576px;
+      align-items: center; }
+    .stats li .teaser-image {
+      flex-grow: 2;
+      flex-basis: 384px;
+      align-items: center; }
+  .stats li:nth-of-type(odd) {
+    background-image: -moz-linear-gradient(left bottom, #6ed7ff 0%, #84d8ff 42%, #6ed7ff 75%); }
   .stats .stat-section {
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-wrap: nowrap; }
     .stats .stat-section .small {
