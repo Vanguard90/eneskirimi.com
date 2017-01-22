@@ -86,6 +86,16 @@ main {
 		font-family: "Roboto";
 	}
 
+	.bigger {
+
+		transition: font-size 0.5s cubic-bezier(.86,0,.07,1);
+	}
+
+	.bigger:hover {
+
+		font-size: 50px;
+	}
+
 	li {
 
 		display: flex;
@@ -115,7 +125,7 @@ main {
 
 	.stat-section {
 
-		height: 300px;
+		height: 50vh;
 		display: flex;
 		flex-wrap: nowrap;
 
