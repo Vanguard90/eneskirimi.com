@@ -54,12 +54,19 @@ main {
 
 .stats {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  line-height: 1.3; }
   .stats h2 {
     font-family: "Open sans";
     font-size: 36px;
     align-self: center;
     align-items: center; }
+  .stats .h2-title {
+    transform: translateX(-100%);
+    opacity: 0; }
+  .stats .h2-title.active {
+    transform: translateX(0);
+    opacity: 1; }
   .stats p {
     font-family: "Roboto"; }
   .stats .bigger {
@@ -87,5 +94,7 @@ main {
     flex-wrap: nowrap; }
     .stats .stat-section .small {
       font-size: 9px; }
+    .stats .stat-section .transform-active {
+      transform: scale(1.2, 1.2); }
 
 /*# sourceMappingURL=style.css.map */

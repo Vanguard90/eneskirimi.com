@@ -73,6 +73,7 @@ main {
 
 	display: flex;
 	flex-direction: column;
+	line-height: 1.3;
 
 	h2 {
 
@@ -81,6 +82,9 @@ main {
 		align-self: center;
 		align-items: center;
 	}
+
+	.h2-title { transform: translateX(-100%); opacity: 0;}
+	.h2-title.active { transform: translateX(0); opacity: 1;}
 
 	p {
 		font-family: "Roboto";
@@ -132,6 +136,11 @@ main {
 		.small {
 
 			font-size: 9px;
+		}
+
+		.transform-active {
+
+			transform: scale(1.2,1.2);
 		}
 	}
 }
