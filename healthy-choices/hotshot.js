@@ -24,4 +24,4 @@ function usTitleCheck(usTitle) {
 
 }
 
-setInterval(usTitleCheck(usTitle), 1000);
+setInterval("usTitleCheck(usTitle)", 1000);
