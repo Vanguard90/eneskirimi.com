@@ -1,6 +1,7 @@
 const html = document.querySelector("html");
 const usTitle = document.querySelector(".h2-title");
 const h2 = document.querySelector("h2");
+const usa = document.querySelector(".usa");
 
 function isScrolledIntoView(el) {
     var elemTop = el.getBoundingClientRect().top;
@@ -13,15 +14,17 @@ function isScrolledIntoView(el) {
 function usTitleCheck(usTitle) {
 
 	if (document.documentElement.scrollTop < 1000 && document.documentElement.scrollTop > 50) {
-	if (usTitle.classList.contains("active")) {
+	if (usTitle.classList.contains("active") || usa.classList.contains("active")) {
 		;
 	} else {
 		usTitle.classList.add("active");
+		usa.classList.add("active");
 	}
 } else {
 	usTitle.classList.remove("active");
+	usa.classList.remove("active");
 }
 
 }
 
-setInterval("usTitleCheck(usTitle)", 1000);
+setInterval("usTitleCheck(usTitle)", 0500);

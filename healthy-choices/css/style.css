@@ -29,7 +29,8 @@ time, mark, audio, video {
 
 body {
   display: flex;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  flex-direction: column; }
 
 main {
   display: flex;
@@ -39,30 +40,62 @@ main {
 
 .masthead {
   height: 400px;
+  width: 100vw;
   display: flex;
+  overflow-x: visible;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../img/masthead/masthead-apples.png);
-  background-position: center bottom;
-  background-size: cover; }
+  background-image: url(../img/masthead/fruit-background-large.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin: 0; }
   .masthead h1 {
-    width: 70%;
+    width: 50%;
     font-size: 32px;
+    color: #fff;
     font-family: "Open sans";
     font-weight: bold;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    align-items: center;
+    align-content: center;
+    align-self: center; }
+  .masthead p {
+    width: 50%;
+    color: #fff;
+    align-items: center;
+    align-content: center;
+    align-self: center; }
 
 .stats {
   display: flex;
   flex-direction: column;
   line-height: 1.3; }
+  .stats .start-section {
+    height: 15vh;
+    display: flex;
+    flex-wrap: nowrap; }
   .stats h2 {
     font-family: "Open sans";
     font-size: 36px;
     align-self: center;
-    align-items: center; }
+    align-items: center;
+    transition: opacity 1s linear;
+    transition: transform 0.1s linear; }
+  .stats .usa {
+    width: 400px;
+    height: 250px;
+    align-self: center;
+    transition: opacity 3s linear;
+    transition: transform 0.5s linear;
+    transform: translateY(-20%);
+    opacity: 0;
+    padding-bottom: 20px; }
+  .stats .usa.active {
+    transform: translateY(0);
+    opacity: 1; }
   .stats .h2-title {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     opacity: 0; }
   .stats .h2-title.active {
     transform: translateX(0);
