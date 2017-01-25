@@ -18,6 +18,7 @@ time, mark, audio, video {
 
 $body-width: 960px;
 $basic-padding: 20px;
+$common-transition: font-size 0.5s cubic-bezier(.86,0,.07,1);
 
 @font-face {
   font-family: "Open sans";
@@ -28,6 +29,17 @@ $basic-padding: 20px;
   font-family: "Roboto";
   src: url("../fonts/roboto/Roboto-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Scala";
+  src: url("../fonts/scala/scala.otf");
+}
+
+@font-face {
+  font-family: "Gothic";
+  src: url("../fonts/trade-gothic-lt/trade-gothic-lt-std-bold.otf");
+}
+
 
 .extendfull {
 
@@ -68,7 +80,7 @@ main {
 		width: 50%;
 		font-size: 32px;
 		color: #fff;
-		font-family: "Open sans";
+		font-family: "Gothic";
 		font-weight: bold;
 		padding-bottom: $basic-padding;
 		align-items: center;
@@ -82,6 +94,7 @@ main {
 		align-items: center;
 		align-content: center;
 		align-self: center;
+		font-family: "Scala";
 	}
 
 }
@@ -101,7 +114,7 @@ main {
 
 	h2 {
 
-		font-family: "Open sans";
+		font-family: "Gothic";
 		font-size: 36px;
 		align-self: center;
 		align-items: center;
@@ -129,12 +142,12 @@ main {
 	.h2-title.active { transform: translateX(0); opacity: 1;}
 
 	p {
-		font-family: "Roboto";
+		font-family: "Scala";
 	}
 
 	.bigger {
 
-		transition: font-size 0.5s cubic-bezier(.86,0,.07,1);
+		transition: $common-transition;
 	}
 
 	.bigger:hover {
@@ -171,9 +184,20 @@ main {
 
 	.stat-section {
 
-		height: 50vh;
+		height: 40vh;
+		max-height: 100%;
 		display: flex;
 		flex-wrap: nowrap;
+
+		img {
+
+			max-height: 100%;
+		}
+
+		p {
+
+			padding-left: $basic-padding/2;
+		}
 
 		.small {
 
@@ -183,6 +207,24 @@ main {
 		.transform-active {
 
 			transform: scale(1.2,1.2);
+		}
+
+		.obese {
+
+			width: 150px;
+			height: 150px;
+			transition: all 0.5s linear;
+		}
+
+		.obese.active {
+
+			width: auto;
+			height: 90%;
+		}
+
+		.obese-bigger.active {
+			font-size: 50px;
+			transition: $common-transition;
 		}
 	}
 }

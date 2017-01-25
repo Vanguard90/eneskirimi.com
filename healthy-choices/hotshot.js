@@ -28,3 +28,25 @@ function usTitleCheck(usTitle) {
 }
 
 setInterval("usTitleCheck(usTitle)", 0500);
+
+const obese = document.querySelector(".obese");
+const obeseBigger= document.querySelector(".obese-bigger");
+
+function obeseCheck (obese) {
+	if (document.body.clientHeight/document.documentElement.scrollTop > 3 && document.body.clientHeight/document.documentElement.scrollTop < 5) {
+	if (obese.classList.contains("active") || obeseBigger.classList.contains("active")) {
+		;
+	} else {
+		obese.classList.add("active");
+		obeseBigger.classList.add("active");
+	}
+} else {
+	obese.classList.remove("active");
+	obeseBigger.classList.remove("active");
+	}
+}
+
+setInterval("obeseCheck(obese)", 0500);
+
+const clientHeight = document.body.clientHeight;
+let scrolltop = document.documentElement.scrollTop;
