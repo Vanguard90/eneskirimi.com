@@ -133,13 +133,13 @@ main {
 		padding-bottom: $basic-padding
 	}
 
-	.usa.active {
+	.usa.revealed {
 		transform: translateY(0);
 		opacity: 1;
 	}
 
 	.h2-title { transform: translateX(-50%); opacity: 0;}
-	.h2-title.active { transform: translateX(0); opacity: 1;}
+	.h2-title.revealed { transform: translateX(0); opacity: 1;}
 
 	p {
 		font-family: "Scala";
@@ -216,14 +216,15 @@ main {
 			transition: all 0.5s linear;
 		}
 
-		.obese.active {
+		.obese.revealed {
 
 			width: auto;
 			height: 90%;
 		}
 
-		.obese-bigger.active {
+		.obese-bigger.revealed {
 			font-size: 50px;
+			transition: all 0.5s linear;
 			transition: $common-transition;
 		}
 	}

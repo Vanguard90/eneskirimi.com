@@ -98,13 +98,13 @@ main {
     transform: translateY(-20%);
     opacity: 0;
     padding-bottom: 20px; }
-  .stats .usa.active {
+  .stats .usa.revealed {
     transform: translateY(0);
     opacity: 1; }
   .stats .h2-title {
     transform: translateX(-50%);
     opacity: 0; }
-  .stats .h2-title.active {
+  .stats .h2-title.revealed {
     transform: translateX(0);
     opacity: 1; }
   .stats p {
@@ -145,11 +145,12 @@ main {
       width: 150px;
       height: 150px;
       transition: all 0.5s linear; }
-    .stats .stat-section .obese.active {
+    .stats .stat-section .obese.revealed {
       width: auto;
       height: 90%; }
-    .stats .stat-section .obese-bigger.active {
+    .stats .stat-section .obese-bigger.revealed {
       font-size: 50px;
+      transition: all 0.5s linear;
       transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
 
 /*# sourceMappingURL=style.css.map */
