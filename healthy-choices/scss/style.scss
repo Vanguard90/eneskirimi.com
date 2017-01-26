@@ -18,7 +18,7 @@ time, mark, audio, video {
 
 $body-width: 960px;
 $basic-padding: 20px;
-$common-transition: font-size 0.5s cubic-bezier(.86,0,.07,1);
+$font-transition: font-size 0.5s cubic-bezier(.86,0,.07,1);
 
 @font-face {
   font-family: "Open sans";
@@ -147,7 +147,7 @@ main {
 
 	.bigger {
 
-		transition: $common-transition;
+		transition: $font-transition;
 	}
 
 	.bigger:hover {
@@ -184,7 +184,7 @@ main {
 
 	.stat-section {
 
-		height: 40vh;
+		height: 35vh;
 		max-height: 100%;
 		display: flex;
 		flex-wrap: nowrap;
@@ -219,13 +219,24 @@ main {
 		.obese.revealed {
 
 			width: auto;
-			height: 90%;
+			height: 80%;
 		}
 
 		.obese-bigger.revealed {
 			font-size: 50px;
 			transition: all 0.5s linear;
-			transition: $common-transition;
+			transition: $font-transition;
+		}
+
+		.diabetes {
+
+			transition: $font-transition;
+		}
+
+		.diabetes.revealed {
+
+			font-size: 50px;
+			transition: $font-transition;
 		}
 	}
 }

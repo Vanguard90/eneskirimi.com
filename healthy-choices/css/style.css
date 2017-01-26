@@ -129,7 +129,7 @@ main {
   .stats li:nth-of-type(odd) {
     background-image: -moz-linear-gradient(left bottom, #6ed7ff 0%, #84d8ff 42%, #6ed7ff 75%); }
   .stats .stat-section {
-    height: 40vh;
+    height: 35vh;
     max-height: 100%;
     display: flex;
     flex-wrap: nowrap; }
@@ -147,10 +147,15 @@ main {
       transition: all 0.5s linear; }
     .stats .stat-section .obese.revealed {
       width: auto;
-      height: 90%; }
+      height: 80%; }
     .stats .stat-section .obese-bigger.revealed {
       font-size: 50px;
       transition: all 0.5s linear;
+      transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
+    .stats .stat-section .diabetes {
+      transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
+    .stats .stat-section .diabetes.revealed {
+      font-size: 50px;
       transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
 
 /*# sourceMappingURL=style.css.map */
