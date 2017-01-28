@@ -174,6 +174,7 @@ main {
 			flex-grow: 2;
 			flex-basis: 384px;
 			align-items: center;
+			align-content: center;
 		}
 	}
 
@@ -188,6 +189,8 @@ main {
 		max-height: 100%;
 		display: flex;
 		flex-wrap: nowrap;
+		padding-top: $basic-padding/2;
+		padding-bottom: $basic-padding/2;
 
 		img {
 
@@ -211,9 +214,9 @@ main {
 
 		.obese {
 
-			width: 150px;
-			height: 150px;
 			transition: all 0.5s linear;
+			width: auto;
+			height: 60%;
 		}
 
 		.obese.revealed {
@@ -228,12 +231,12 @@ main {
 			transition: $font-transition;
 		}
 
-		.diabetes {
+		.diabetes-bigger {
 
 			transition: $font-transition;
 		}
 
-		.diabetes.revealed {
+		.diabetes-bigger.revealed {
 
 			font-size: 50px;
 			transition: $font-transition;

@@ -245,3 +245,39 @@ var withinViewport = (function() {
   return withinViewport;
 
 }());
+
+let diabetes = document.querySelector(".diabetes");
+
+function diabetesCheck(diabetes) {
+
+		if(diabetes.classList.contains("diabetes" && "revealed")) {
+			diabetes.src = "img/icons/diabetes-icon-green.png";
+		} else if(diabetes.classList.contains("diabetes" && "revealer")) {
+			diabetes.src = "img/icons/diabetes-icon-mod.png";
+	}
+}
+
+setInterval("diabetesCheck(diabetes)", 0500);
+
+/*
+
+
+images = Array.from(images);
+
+let imgAtt = images.map(images => images.className);
+
+function imgCheck (imgAtt) {
+	if (images.classList.contains("revealed")) {
+
+		if (images.classList.contains("diabetes")) {
+
+			let diabetes = document.querySelector(".diabetes");
+			diabetes.src = "img/icons/diabetes-green-icon-mod.png"
+		}
+
+	}
+}
+
+
+
+*/
