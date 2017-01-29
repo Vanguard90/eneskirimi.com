@@ -247,6 +247,7 @@ var withinViewport = (function() {
 }());
 
 let diabetes = document.querySelector(".diabetes");
+let diabetesEvent = diabetes.addEventListener("transitionend" , diabetesCheck(diabetes));
 
 function diabetesCheck(diabetes) {
 
@@ -257,7 +258,7 @@ function diabetesCheck(diabetes) {
 	}
 }
 
-setInterval("diabetesCheck(diabetes)", 0500);
+setInterval("diabetesCheck(diabetes)", 0900);
 
 /*
 

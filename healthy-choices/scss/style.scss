@@ -78,7 +78,7 @@ main {
 	h1 {
 
 		width: 50%;
-		font-size: 32px;
+		font-size: 36px;
 		color: #fff;
 		font-family: "Gothic";
 		font-weight: bold;
@@ -95,6 +95,7 @@ main {
 		align-content: center;
 		align-self: center;
 		font-family: "Scala";
+		line-height: 1.2;
 	}
 
 }
@@ -181,6 +182,13 @@ main {
 	li:nth-of-type(odd) {
 
 		background-image: -moz-linear-gradient(left bottom, rgb(110,215,255) 0%, rgb(132,216,255) 42%,rgb(110,215,255) 75%);
+ 		background-color:rgb(110,215,255);
+ 		filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=rgb(110,215,255), endColorstr=rgb(132,216,255));
+ 		background-image:-moz-linear-gradient(top, rgb(110,215,255) 0%, rgb(132,216,255) 42%,rgb(110,215,255) 75%);
+		background-image:linear-gradient(top, rgb(110,215,255) 0%, rgb(132,216,255) 42%,rgb(110,215,255) 75%);
+		background-image:-webkit-linear-gradient(top, rgb(110,215,255) 0%, rgb(132,216,255) 42%,rgb(110,215,255) 75%);
+		background-image:-o-linear-gradient(top, rgb(110,215,255) 0%, rgb(132,216,255) 42%,rgb(110,215,255) 75%);
+		background-image:-ms-linear-gradient(top, rgb(110,215,255) 0%, rgb(132,216,255) 42%,rgb(110,215,255) 75%);
 	}
 
 	.stat-section {
@@ -231,15 +239,51 @@ main {
 			transition: $font-transition;
 		}
 
-		.diabetes-bigger {
+		.diabetes-bigger, .pressure-bigger {
 
 			transition: $font-transition;
 		}
 
-		.diabetes-bigger.revealed {
+		.diabetes-bigger.revealed, .pressure-bigger.revealed {
 
 			font-size: 50px;
 			transition: $font-transition;
 		}
+
+		.diabetes {
+
+			transition: all 0.5s linear;
+			width: auto;
+			height: 60%;
+		}
+
+		.diabetes.revealed {
+			width: auto;
+			height: 80%;
+			transition: all 0.5s linear;
+		}
+
+		.conjurer1, .conjurer2 {
+
+			position: absolute;
+			align-self: center;
+			transition: all 1s linear 0.5s;
+
+		}
+
+		.conjurer1.revealed {
+
+			transform: rotate(-45deg) translateX(-50px) translateY(-20px);
+			transform-origin: 50%;
+
+		}
+
+		.conjurer2.revealed {
+
+			transform: rotate(45deg) translateX(50px) translateY(-20px);
+			transform-origin: 50%;
+
+		}
+
 	}
 }
