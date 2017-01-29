@@ -65,7 +65,8 @@ main {
     padding-bottom: 20px;
     align-items: center;
     align-content: center;
-    align-self: center; }
+    align-self: center;
+    text-shadow: 1px 1px #000; }
   .masthead p {
     width: 50%;
     color: #fff;
@@ -73,7 +74,8 @@ main {
     align-content: center;
     align-self: center;
     font-family: "Scala";
-    line-height: 1.2; }
+    line-height: 1.2;
+    text-shadow: 0.8px 0.8px #000; }
 
 .stats {
   display: flex;
@@ -155,36 +157,68 @@ main {
     .stats .stat-section .obese {
       transition: all 0.5s linear;
       width: auto;
+      object-fit: contain;
       height: 60%; }
     .stats .stat-section .obese.revealed {
       width: auto;
+      object-fit: contain;
       height: 80%; }
     .stats .stat-section .obese-bigger.revealed {
       font-size: 50px;
       transition: all 0.5s linear;
       transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
-    .stats .stat-section .diabetes-bigger, .stats .stat-section .pressure-bigger {
+    .stats .stat-section .diabetes-bigger, .stats .stat-section .pressure-bigger, .stats .stat-section .bigger {
       transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
-    .stats .stat-section .diabetes-bigger.revealed, .stats .stat-section .pressure-bigger.revealed {
+    .stats .stat-section .diabetes-bigger.revealed, .stats .stat-section .pressure-bigger.revealed, .stats .stat-section .bigger.revealed {
       font-size: 50px;
       transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
     .stats .stat-section .diabetes {
-      transition: all 0.5s linear;
+      transition: all 0.5s linear 0.5s;
+      object-fit: contain;
       width: auto;
+      max-width: 60%;
       height: 60%; }
     .stats .stat-section .diabetes.revealed {
       width: auto;
+      max-width: 80%;
+      object-fit: contain;
       height: 80%;
-      transition: all 0.5s linear; }
+      transition: all 0.5s linear 0.5s; }
     .stats .stat-section .conjurer1, .stats .stat-section .conjurer2 {
       position: absolute;
       align-self: center;
-      transition: all 1s linear 0.5s; }
+      transition: all 0.7s linear 0.5s; }
     .stats .stat-section .conjurer1.revealed {
       transform: rotate(-45deg) translateX(-50px) translateY(-20px);
       transform-origin: 50%; }
     .stats .stat-section .conjurer2.revealed {
       transform: rotate(45deg) translateX(50px) translateY(-20px);
       transform-origin: 50%; }
+    .stats .stat-section .underline {
+      transition: all ease-in-out 1.5s;
+      border-bottom: 1px solid transparent;
+      line-height: 1.5; }
+    .stats .stat-section .underline.revealed {
+      border-bottom: 1px solid black;
+      font-size: 24px;
+      transition: all ease-in-out 1.5s; }
+
+@media (max-width: 960px) {
+  .masthead {
+    background-image: url(../img/masthead/fruit-background-m.jpg); } }
+@media (max-width: 700px) {
+  .masthead {
+    background-image: url(../img/masthead/fruit-background-s.jpg); }
+    .masthead h1 {
+      width: 70%; }
+    .masthead p {
+      width: 70%; } }
+@media (max-width: 450px) {
+  .masthead {
+    background-image: url(../img/masthead/fruit-background-xs.jpg); }
+    .masthead h1 {
+      width: 70%; }
+    .masthead p {
+      width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */

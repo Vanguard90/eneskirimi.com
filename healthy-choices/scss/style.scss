@@ -86,6 +86,7 @@ main {
 		align-items: center;
 		align-content: center;
 		align-self: center;
+		text-shadow: 1px 1px #000;
 	}
 
 	p {
@@ -96,6 +97,7 @@ main {
 		align-self: center;
 		font-family: "Scala";
 		line-height: 1.2;
+		text-shadow: 0.8px 0.8px #000;
 	}
 
 }
@@ -224,12 +226,14 @@ main {
 
 			transition: all 0.5s linear;
 			width: auto;
+			object-fit: contain; //For chrome
 			height: 60%;
 		}
 
 		.obese.revealed {
 
 			width: auto;
+			object-fit: contain; //For chrome
 			height: 80%;
 		}
 
@@ -239,12 +243,12 @@ main {
 			transition: $font-transition;
 		}
 
-		.diabetes-bigger, .pressure-bigger {
+		.diabetes-bigger, .pressure-bigger, .bigger {
 
 			transition: $font-transition;
 		}
 
-		.diabetes-bigger.revealed, .pressure-bigger.revealed {
+		.diabetes-bigger.revealed, .pressure-bigger.revealed, .bigger.revealed {
 
 			font-size: 50px;
 			transition: $font-transition;
@@ -252,22 +256,26 @@ main {
 
 		.diabetes {
 
-			transition: all 0.5s linear;
+			transition: all 0.5s linear 0.5s;
+			object-fit: contain; //For chrome
 			width: auto;
+			max-width: 60%;
 			height: 60%;
 		}
 
 		.diabetes.revealed {
 			width: auto;
+			max-width: 80%;
+			object-fit: contain; //For chrome
 			height: 80%;
-			transition: all 0.5s linear;
+			transition: all 0.5s linear 0.5s;
 		}
 
 		.conjurer1, .conjurer2 {
 
 			position: absolute;
 			align-self: center;
-			transition: all 1s linear 0.5s;
+			transition: all 0.7s linear 0.5s;
 
 		}
 
@@ -285,5 +293,67 @@ main {
 
 		}
 
+		.underline {
+
+		transition: all ease-in-out 1.5s;
+		border-bottom: 1px solid transparent;
+		line-height: 1.5;
+
+		}
+
+		.underline.revealed {
+
+			border-bottom: 1px solid black;
+			font-size: 24px;
+			transition: all ease-in-out 1.5s;
+
+		}
+
 	}
+}
+
+@media (max-width:960px) {
+
+.masthead {
+	background-image: url(../img/masthead/fruit-background-m.jpg);
+
+}
+
+}
+
+@media (max-width:700px) {
+
+.masthead {
+	background-image: url(../img/masthead/fruit-background-s.jpg);
+
+	h1 {
+
+		width: 70%;
+	}
+
+	p {
+
+		width: 70%;
+	}
+
+}
+
+}
+
+@media (max-width:450px) {
+
+.masthead {
+	background-image: url(../img/masthead/fruit-background-xs.jpg);
+
+	h1 {
+
+		width: 70%;
+	}
+
+	p {
+		width: 70%;
+	}
+
+}
+
 }

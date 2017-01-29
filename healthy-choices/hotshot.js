@@ -58,9 +58,6 @@ var withinViewport = (function() {
 
   'use strict';
 
-  // Cutting the mustard
-  // http://webfieldmanual.com/guides/cutting-the-mustard.html
-
   if (window.requestAnimationFrame && document.documentElement.classList) {
 
     // Passes the test so add enhanced class to HTML tag
@@ -232,7 +229,6 @@ var withinViewport = (function() {
 
   }
 
-  // FOR DEMO PURPOSES ONLY
   // Makes fullscreen intro on any device so user is forced to scroll
   var fullscreenIntro = function() {
     var fullscreen = document.querySelectorAll('.fullscreen');
@@ -252,9 +248,9 @@ let diabetesEvent = diabetes.addEventListener("transitionend" , diabetesCheck(di
 function diabetesCheck(diabetes) {
 
 		if(diabetes.classList.contains("diabetes" && "revealed")) {
-			diabetes.src = "img/icons/diabetes-icon-green.png";
-		} else if(diabetes.classList.contains("diabetes" && "revealer")) {
 			diabetes.src = "img/icons/diabetes-icon-mod.png";
+		} else if(diabetes.classList.contains("diabetes" && "revealer")) {
+			diabetes.src = "img/icons/diabetes-icon-green.png";
 	}
 }
 
