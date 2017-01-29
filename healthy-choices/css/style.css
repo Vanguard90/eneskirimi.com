@@ -44,6 +44,9 @@ main {
   margin: auto;
   width: 960px; }
 
+p {
+  font-family: "Scala"; }
+
 .masthead {
   height: 400px;
   width: 100vw;
@@ -73,7 +76,6 @@ main {
     align-items: center;
     align-content: center;
     align-self: center;
-    font-family: "Scala";
     line-height: 1.2;
     text-shadow: 0.8px 0.8px #000; }
 
@@ -152,15 +154,14 @@ main {
       padding-left: 10px; }
     .stats .stat-section .small {
       font-size: 9px; }
-    .stats .stat-section .transform-active {
-      transform: scale(1.2, 1.2); }
     .stats .stat-section .obese {
-      transition: all 0.5s linear;
+      transition: all 0.5s linear 0.5s;
       width: auto;
       object-fit: contain;
       height: 60%; }
     .stats .stat-section .obese.revealed {
       width: auto;
+      transition: all 0.5s linear 0.5s;
       object-fit: contain;
       height: 80%; }
     .stats .stat-section .obese-bigger.revealed {
@@ -202,6 +203,9 @@ main {
       border-bottom: 1px solid black;
       font-size: 24px;
       transition: all ease-in-out 1.5s; }
+
+#mid-content {
+  padding: 20px 10px 20px 10px; }
 
 @media (max-width: 960px) {
   .masthead {

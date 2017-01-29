@@ -256,6 +256,24 @@ function diabetesCheck(diabetes) {
 
 setInterval("diabetesCheck(diabetes)", 0900);
 
+
+let stroke = ["img/icons/stroke-icon-start.png","img/icons/stroke-icon-finish.png"], x = 0;
+const alttext = ["stoke icon brain","stroke icon brain with lighting"];
+
+function nextimage() {
+
+    let selectedImg = document.querySelector(".stroke-icon");
+    selectedImg.src = stroke[x];
+    selectedImg.alt = alttext[x];
+    x++;
+
+    if(x >= stroke.length){
+        x = 0;
+    }
+}
+
+setInterval(nextimage, 2000);
+
 /*
 
 
