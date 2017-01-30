@@ -294,7 +294,7 @@ p {
 
 		.underline {
 
-		transition: all ease-in-out 1.5s;
+		transition: all ease-in-out 0.75s;
 		border-bottom: 1px solid transparent;
 		line-height: 1.5;
 
@@ -304,10 +304,29 @@ p {
 
 			border-bottom: 1px solid black;
 			font-size: 24px;
-			transition: all ease-in-out 1.5s;
+			transition: all ease-in-out 0.75s;
 
 		}
 
+	}
+}
+
+.teaser-2 {
+
+	display: flex;
+	flex-direction: column;
+
+	h2 {
+
+		margin: 0 auto;
+		font-family: "Gothic";
+		transition: $font-transition;
+		padding-bottom: $basic-padding*1.5;
+	}
+
+	h2.revealed {
+		transition: $font-transition;
+		font-size: 40px;
 	}
 }
 
@@ -321,6 +340,31 @@ p {
 .masthead {
 	background-image: url(../img/masthead/fruit-background-m.jpg);
 
+}
+
+main {
+
+	width: 100%;
+}
+
+.stats {
+
+	li {
+
+		.teaser-text {
+			flex-basis: 60%;
+			flex-grow: 1;
+			flex-shrink: 2;
+			display: flex;
+			justify-content: center;
+		}
+
+		.teaser-image {
+			flex-basis: 40%;
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+	}
 }
 
 }
