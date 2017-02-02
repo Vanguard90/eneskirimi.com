@@ -141,68 +141,6 @@ p {
     background-image: -webkit-linear-gradient(top, #6ed7ff 0%, #84d8ff 42%, #6ed7ff 75%);
     background-image: -o-linear-gradient(top, #6ed7ff 0%, #84d8ff 42%, #6ed7ff 75%);
     background-image: -ms-linear-gradient(top, #6ed7ff 0%, #84d8ff 42%, #6ed7ff 75%); }
-  .stats .stat-section {
-    height: 35vh;
-    max-height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-    .stats .stat-section img {
-      max-height: 100%; }
-    .stats .stat-section p {
-      padding-left: 10px; }
-    .stats .stat-section .small {
-      font-size: 9px; }
-    .stats .stat-section .obese {
-      transition: all 0.5s linear 0.5s;
-      width: auto;
-      object-fit: contain;
-      height: 60%; }
-    .stats .stat-section .obese.revealed {
-      width: auto;
-      transition: all 0.5s linear 0.5s;
-      object-fit: contain;
-      height: 80%; }
-    .stats .stat-section .obese-bigger.revealed {
-      font-size: 50px;
-      transition: all 0.5s linear;
-      transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
-    .stats .stat-section .diabetes-bigger, .stats .stat-section .pressure-bigger, .stats .stat-section .bigger {
-      transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
-    .stats .stat-section .diabetes-bigger.revealed, .stats .stat-section .pressure-bigger.revealed, .stats .stat-section .bigger.revealed {
-      font-size: 50px;
-      transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
-    .stats .stat-section .diabetes {
-      transition: all 0.5s linear 0.5s;
-      object-fit: contain;
-      width: auto;
-      max-width: 60%;
-      height: 60%; }
-    .stats .stat-section .diabetes.revealed {
-      width: auto;
-      max-width: 80%;
-      object-fit: contain;
-      height: 80%;
-      transition: all 0.5s linear 0.5s; }
-    .stats .stat-section .conjurer1, .stats .stat-section .conjurer2 {
-      position: absolute;
-      align-self: center;
-      transition: all 0.7s linear 0.5s; }
-    .stats .stat-section .conjurer1.revealed {
-      transform: rotate(-45deg) translateX(-50px) translateY(-20px);
-      transform-origin: 50%; }
-    .stats .stat-section .conjurer2.revealed {
-      transform: rotate(45deg) translateX(50px) translateY(-20px);
-      transform-origin: 50%; }
-    .stats .stat-section .underline {
-      transition: all ease-in-out 0.75s;
-      border-bottom: 1px solid transparent;
-      line-height: 1.5; }
-    .stats .stat-section .underline.revealed {
-      border-bottom: 1px solid black;
-      font-size: 24px;
-      transition: all ease-in-out 0.75s; }
 
 .teaser-2 {
   display: flex;
@@ -215,6 +153,20 @@ p {
   .teaser-2 h2.revealed {
     transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1);
     font-size: 40px; }
+
+.stat-section2 {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 30px; }
+  .stat-section2 .text-section {
+    width: 50%; }
+  .stat-section2 .image-section {
+    align-self: center; }
+  .stat-section2 h3 {
+    font-family: "Gothic";
+    padding-bottom: 20px; }
+  .stat-section2 p {
+    font-family: "Scala"; }
 
 #mid-content {
   padding: 20px 10px 20px 10px; }

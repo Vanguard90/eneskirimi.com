@@ -196,119 +196,6 @@ p {
 		background-image:-ms-linear-gradient(top, rgb(110,215,255) 0%, rgb(132,216,255) 42%,rgb(110,215,255) 75%);
 	}
 
-	.stat-section {
-
-		height: 35vh;
-		max-height: 100%;
-		display: flex;
-		flex-wrap: nowrap;
-		padding-top: $basic-padding/2;
-		padding-bottom: $basic-padding/2;
-
-		img {
-
-			max-height: 100%;
-		}
-
-		p {
-
-			padding-left: $basic-padding/2;
-		}
-
-		.small {
-
-			font-size: 9px;
-		}
-
-		.obese {
-
-			transition: all 0.5s linear 0.5s;
-			width: auto;
-			object-fit: contain; //For chrome
-			height: 60%;
-		}
-
-		.obese.revealed {
-
-			width: auto;
-			transition: all 0.5s linear 0.5s;
-			object-fit: contain; //For chrome
-			height: 80%;
-		}
-
-		.obese-bigger.revealed {
-			font-size: 50px;
-			transition: all 0.5s linear;
-			transition: $font-transition;
-		}
-
-		.diabetes-bigger, .pressure-bigger, .bigger {
-
-			transition: $font-transition;
-		}
-
-		.diabetes-bigger.revealed, .pressure-bigger.revealed, .bigger.revealed {
-
-			font-size: 50px;
-			transition: $font-transition;
-		}
-
-		.diabetes {
-
-			transition: all 0.5s linear 0.5s;
-			object-fit: contain; //For chrome
-			width: auto;
-			max-width: 60%;
-			height: 60%;
-		}
-
-		.diabetes.revealed {
-			width: auto;
-			max-width: 80%;
-			object-fit: contain; //For chrome
-			height: 80%;
-			transition: all 0.5s linear 0.5s;
-		}
-
-		.conjurer1, .conjurer2 {
-
-			position: absolute;
-			align-self: center;
-			transition: all 0.7s linear 0.5s;
-
-		}
-
-		.conjurer1.revealed {
-
-			transform: rotate(-45deg) translateX(-50px) translateY(-20px);
-			transform-origin: 50%;
-
-		}
-
-		.conjurer2.revealed {
-
-			transform: rotate(45deg) translateX(50px) translateY(-20px);
-			transform-origin: 50%;
-
-		}
-
-		.underline {
-
-		transition: all ease-in-out 0.75s;
-		border-bottom: 1px solid transparent;
-		line-height: 1.5;
-
-		}
-
-		.underline.revealed {
-
-			border-bottom: 1px solid black;
-			font-size: 24px;
-			transition: all ease-in-out 0.75s;
-
-		}
-
-	}
 }
 
 .teaser-2 {
@@ -329,6 +216,36 @@ p {
 		font-size: 40px;
 	}
 }
+
+.stat-section2 {
+
+		display: flex;
+		flex-wrap: nowrap;
+		padding-bottom: $basic-padding*1.5;
+
+		.text-section {
+
+			width: 50%
+		}
+
+		.image-section {
+
+			align-self: center;
+		}
+
+		h3 {
+
+		font-family: "Gothic";
+		padding-bottom: $basic-padding;
+		}
+
+		p {
+
+			font-family: "Scala";
+		}
+
+}
+
 
 #mid-content {
 
