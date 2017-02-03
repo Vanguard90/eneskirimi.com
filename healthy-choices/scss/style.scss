@@ -325,7 +325,7 @@ p {
 
 	h2.revealed {
 		transition: $font-transition;
-		font-size: 40px;
+		font-size: 50px;
 	}
 }
 
@@ -333,29 +333,48 @@ p {
 
 		display: flex;
 		flex-wrap: nowrap;
+		align-content: center;
 		padding-bottom: $basic-padding*1.5;
 
 		.text-section {
 
-			width: 50%
+			width: 50%;
+			min-height: 200px;
+			flex-basis: 576px;
+			align-self: center;
 		}
 
 		.image-section {
 
 			align-self: center;
+			min-height: 200px;
+			flex-basis: 384px;
 		}
 
 		h3 {
 
 		font-family: "Gothic";
 		padding-bottom: $basic-padding;
+		font-size: 32px;
+		align-self: center;
+		padding-top: $basic-padding*1.5;
+
 		}
 
 		p {
 
 			font-family: "Scala";
+			align-self: center;
 		}
 
+		.flex-order-low {
+
+			order: 2;
+		}
+
+		.flex-order-high {
+			order: 3;
+		}
 }
 
 
