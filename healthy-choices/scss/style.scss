@@ -366,7 +366,6 @@ p {
 		padding-bottom: $basic-padding;
 		font-size: 32px;
 		align-self: center;
-		padding-top: $basic-padding*1.5;
 
 		}
 
@@ -388,6 +387,20 @@ p {
 		.flex-order-high {
 			order: 2;
 		}
+
+		.font-size {
+
+		transition: all ease-in-out 0.75s;
+		line-height: 1.5;
+
+		}
+
+		.font-size.revealed {
+
+			font-size: 110%;
+			transition: all ease-in-out 0.75s;
+		}
+
 }
 
 .bottom-text {
@@ -431,6 +444,11 @@ footer {
 		display: flex;
 		width: inherit;
 		justify-content: inherit;
+	}
+
+	.footer-text {
+
+		font-size: 11px;
 	}
 }
 
