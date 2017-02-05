@@ -188,13 +188,15 @@ p {
     .stats .stat-section .conjurer1, .stats .stat-section .conjurer2 {
       position: absolute;
       align-self: center;
-      transition: all 0.7s linear 0.5s; }
+      transition: all 0.1s linear; }
     .stats .stat-section .conjurer1.revealed {
       transform: rotate(-45deg) translateX(-50px) translateY(-20px);
-      transform-origin: 50%; }
+      transform-origin: 50%;
+      transition: all 0.7s linear 0.5s; }
     .stats .stat-section .conjurer2.revealed {
       transform: rotate(45deg) translateX(50px) translateY(-20px);
-      transform-origin: 50%; }
+      transform-origin: 50%;
+      transition: all 0.7s linear 0.5s; }
     .stats .stat-section .underline {
       transition: all ease-in-out 0.75s;
       border-bottom: 1px solid transparent;
@@ -216,11 +218,16 @@ p {
     transition: font-size 0.5s cubic-bezier(0.86, 0, 0.07, 1);
     font-size: 50px; }
 
+.first-child, footer {
+  border-top: 1px solid black; }
+
 .stat-section2 {
   display: flex;
   flex-wrap: nowrap;
   align-content: center;
-  padding-bottom: 30px; }
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid black; }
   .stat-section2 .text-section {
     width: 50%;
     min-height: 200px;
@@ -246,16 +253,33 @@ p {
   .stat-section2 .flex-order-high {
     order: 2; }
 
-.left-padding {
-  padding-left: 10px;
-  padding-bottom: 30px; }
+.bottom-text {
+  padding: 30px 0 30px 10px; }
 
 .sources {
   width: 100%;
-  padding-left: 10px; }
+  padding-left: 10px;
+  padding-bottom: 20px; }
+  .sources h3 {
+    font-family: "Gothic";
+    font-size: 32px;
+    padding-bottom: 20px; }
+  .sources p {
+    padding-bottom: 10px; }
 
 #mid-content {
   padding: 20px 10px 20px 10px; }
+
+footer {
+  padding-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 20px; }
+  footer div {
+    display: flex;
+    width: inherit;
+    justify-content: inherit; }
 
 @media (max-width: 960px) {
   .masthead {

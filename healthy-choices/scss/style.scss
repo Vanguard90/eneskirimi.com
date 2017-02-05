@@ -274,7 +274,7 @@ p {
 
 			position: absolute;
 			align-self: center;
-			transition: all 0.7s linear 0.5s;
+			transition: all 0.1s linear;
 
 		}
 
@@ -282,6 +282,7 @@ p {
 
 			transform: rotate(-45deg) translateX(-50px) translateY(-20px);
 			transform-origin: 50%;
+			transition: all 0.7s linear 0.5s;
 
 		}
 
@@ -289,6 +290,7 @@ p {
 
 			transform: rotate(45deg) translateX(50px) translateY(-20px);
 			transform-origin: 50%;
+			transition: all 0.7s linear 0.5s;
 
 		}
 
@@ -329,12 +331,19 @@ p {
 	}
 }
 
+.first-child, footer{
+
+	border-top: 1px solid black;
+}
+
 .stat-section2 {
 
 		display: flex;
 		flex-wrap: nowrap;
 		align-content: center;
-		padding-bottom: $basic-padding*1.5;
+		padding-bottom: $basic-padding;
+		padding-top: $basic-padding;
+		border-bottom: 1px solid black;
 
 		.text-section {
 
@@ -381,21 +390,48 @@ p {
 		}
 }
 
-.left-padding {
-	padding-left: $basic-padding/2;
-	padding-bottom: $basic-padding*1.5;
+.bottom-text {
+
+	padding: $basic-padding*1.5 0 $basic-padding*1.5 $basic-padding/2;
 }
 
 .sources {
 
 	width: 100%;
 	padding-left: $basic-padding/2;
+	padding-bottom: $basic-padding;
+
+	h3 {
+		font-family: "Gothic";
+		font-size: 32px;
+		padding-bottom: $basic-padding;
+	}
+
+	p {
+		padding-bottom: $basic-padding/2;
+	}
+
 }
 
 
 #mid-content {
 
 	padding: $basic-padding $basic-padding/2 $basic-padding $basic-padding/2;
+}
+
+footer {
+
+	padding-top: $basic-padding;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding-bottom: $basic-padding;
+
+	div {
+		display: flex;
+		width: inherit;
+		justify-content: inherit;
+	}
 }
 
 @media (max-width:960px) {
