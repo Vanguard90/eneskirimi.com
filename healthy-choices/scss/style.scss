@@ -367,14 +367,29 @@ p {
 			align-self: center;
 		}
 
+		h3, p {
+			padding-left: $basic-padding/2;
+		}
+
 		.flex-order-low {
 
-			order: 2;
+			order: 1;
 		}
 
 		.flex-order-high {
-			order: 3;
+			order: 2;
 		}
+}
+
+.left-padding {
+	padding-left: $basic-padding/2;
+	padding-bottom: $basic-padding*1.5;
+}
+
+.sources {
+
+	width: 100%;
+	padding-left: $basic-padding/2;
 }
 
 

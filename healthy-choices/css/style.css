@@ -239,10 +239,20 @@ p {
   .stat-section2 p {
     font-family: "Scala";
     align-self: center; }
+  .stat-section2 h3, .stat-section2 p {
+    padding-left: 10px; }
   .stat-section2 .flex-order-low {
-    order: 2; }
+    order: 1; }
   .stat-section2 .flex-order-high {
-    order: 3; }
+    order: 2; }
+
+.left-padding {
+  padding-left: 10px;
+  padding-bottom: 30px; }
+
+.sources {
+  width: 100%;
+  padding-left: 10px; }
 
 #mid-content {
   padding: 20px 10px 20px 10px; }
