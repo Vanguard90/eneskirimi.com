@@ -356,19 +356,73 @@ footer {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
-    order: 2; }
+    order: 2;
+    flex-basis: 0px; }
   .stats li .teaser-image {
     flex-basis: 100%;
     order: 1;
     display: flex;
     justify-content: center;
-    padding-bottom: 30px; } }
+    padding-bottom: 0; }
+
+  .teaser-2 h2.revealed {
+    font-size: 32px; }
+
+  .first-child, footer {
+    border-top: 1px solid black; }
+
+  .stat-section2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid black; }
+    .stat-section2 .text-section {
+      max-width: 100%;
+      min-height: initial;
+      align-content: center;
+      order: 2;
+      flex-basis: 0px;
+      min-width: 70%; }
+    .stat-section2 .image-section {
+      align-items: center;
+      min-height: initial;
+      max-width: 100%;
+      order: 1;
+      flex-basis: 0px; }
+    .stat-section2 h3 {
+      font-family: "Gothic";
+      padding-bottom: 20px;
+      font-size: 32px;
+      align-self: center; }
+    .stat-section2 p {
+      font-family: "Scala";
+      align-self: center; }
+    .stat-section2 h3, .stat-section2 p {
+      padding-left: 10px; }
+    .stat-section2 .flex-order-low {
+      order: 1; }
+    .stat-section2 .flex-order-high {
+      order: 2; }
+    .stat-section2 .font-size {
+      transition: all ease-in-out 0.75s;
+      line-height: 1.5; }
+    .stat-section2 .font-size.revealed {
+      font-size: 110%;
+      transition: all ease-in-out 0.75s; } }
 @media (max-width: 450px) {
   .masthead {
     background-image: url(../img/masthead/fruit-background-xs.jpg); }
     .masthead h1 {
       width: 70%; }
     .masthead p {
-      width: 70%; } }
+      width: 70%; }
+
+  .stats .stat-section .conjurer-padding {
+    padding-top: 70px; }
+  .stats li .teaser-text {
+    padding-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

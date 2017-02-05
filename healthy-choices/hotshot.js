@@ -1,6 +1,6 @@
 let windowWidth = parseInt(window.innerWidth);
 
-if (windowWidth > 700) {
+if (windowWidth >= 700) {
 	var withinViewport = (function() {
 
   'use strict';
