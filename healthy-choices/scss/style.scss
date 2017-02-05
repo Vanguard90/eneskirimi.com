@@ -198,7 +198,7 @@ p {
 
 		.stat-section {
 
-		height: 35vh;
+		min-height: 35vh;
 		max-height: 100%;
 		display: flex;
 		flex-wrap: nowrap;
@@ -237,7 +237,6 @@ p {
 		}
 
 		.obese-bigger.revealed {
-			font-size: 50px;
 			transition: all 0.5s linear;
 			transition: $font-transition;
 		}
@@ -247,7 +246,7 @@ p {
 			transition: $font-transition;
 		}
 
-		.diabetes-bigger.revealed, .pressure-bigger.revealed, .bigger.revealed {
+		.diabetes-bigger.revealed, .pressure-bigger.revealed, .bigger.revealed, .obese-bigger.revealed {
 
 			font-size: 50px;
 			transition: $font-transition;
@@ -499,6 +498,93 @@ main {
 	p {
 
 		width: 70%;
+	}
+
+}
+
+.stats {
+
+	.usa {
+		max-width: 100%;
+		height: auto;
+		object-fit: contain; //For chrome
+		align-self: center;
+		transition: opacity 3s linear;
+		transition: transform 0.5s linear;
+		transform: translateY(-20%);
+		opacity: 0;
+		padding-bottom: $basic-padding
+	}
+
+	.usa.revealed {
+		transform: translateY(0);
+		object-fit: contain; //For chrome
+		opacity: 1;
+	}
+
+	.stat-section {
+
+	flex-direction: column;
+	min-height: 50vh;
+
+		.obese {
+
+			transition: all 0.5s linear 0.5s;
+			width: auto;
+			object-fit: contain; //For chrome
+			height: 60%;
+		}
+
+		.obese.revealed {
+
+			width: auto;
+			transition: all 0.5s linear 0.5s;
+			object-fit: contain; //For chrome
+			height: 80%;
+		}
+
+		.obese-bigger.revealed {
+			transition: all 0.5s linear;
+			transition: $font-transition;
+		}
+
+		.diabetes-bigger, .pressure-bigger, .bigger {
+
+			transition: $font-transition;
+		}
+
+		.diabetes-bigger.revealed, .pressure-bigger.revealed, .bigger.revealed, .obese-bigger.revealed {
+
+			font-size: 32px;
+			transition: $font-transition;
+		}
+
+		.conjurer1, .conjurer2 {
+
+			position: absolute;
+			align-self: center;
+			height: 200px;
+			transition: all 0.1s linear;
+		}
+
+	}
+
+	li {
+
+		.teaser-text {
+			flex-basis: 100%;
+			display: flex;
+			justify-content: center;
+			order: 2;
+		}
+
+		.teaser-image {
+			flex-basis: 100%;
+			order: 1;
+			display: flex;
+			justify-content: center;
+			padding-bottom: $basic-padding*1.5;
+		}
 	}
 
 }
