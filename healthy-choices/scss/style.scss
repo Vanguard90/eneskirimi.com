@@ -53,6 +53,7 @@ body {
 	display: flex;
 	overflow-x: hidden;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 
 main {
@@ -487,6 +488,7 @@ main {
 
 @media (max-width:700px) {
 
+
 .masthead {
 	background-image: url(../img/masthead/fruit-background-s.jpg);
 
@@ -649,29 +651,6 @@ main {
 		h3, p {
 			padding-left: $basic-padding/2;
 		}
-
-		.flex-order-low {
-
-			order: 1;
-		}
-
-		.flex-order-high {
-			order: 2;
-		}
-
-		.font-size {
-
-		transition: all ease-in-out 0.75s;
-		line-height: 1.5;
-
-		}
-
-		.font-size.revealed {
-
-			font-size: 110%;
-			transition: all ease-in-out 0.75s;
-		}
-
 }
 
 }
@@ -709,6 +688,19 @@ main {
 		padding-bottom: $basic-padding*1.5;
 		}
 	}
+}
+
+.stat-section2 {
+
+	.text-section {
+
+		min-width: 80%;
+	}
+}
+
+.sources {
+
+	width: 95%;
 }
 
 }

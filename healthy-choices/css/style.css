@@ -36,7 +36,8 @@ time, mark, audio, video {
 body {
   display: flex;
   overflow-x: hidden;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow-x: hidden; }
 
 main {
   display: flex;
@@ -401,17 +402,7 @@ footer {
       font-family: "Scala";
       align-self: center; }
     .stat-section2 h3, .stat-section2 p {
-      padding-left: 10px; }
-    .stat-section2 .flex-order-low {
-      order: 1; }
-    .stat-section2 .flex-order-high {
-      order: 2; }
-    .stat-section2 .font-size {
-      transition: all ease-in-out 0.75s;
-      line-height: 1.5; }
-    .stat-section2 .font-size.revealed {
-      font-size: 110%;
-      transition: all ease-in-out 0.75s; } }
+      padding-left: 10px; } }
 @media (max-width: 450px) {
   .masthead {
     background-image: url(../img/masthead/fruit-background-xs.jpg); }
@@ -423,6 +414,12 @@ footer {
   .stats .stat-section .conjurer-padding {
     padding-top: 70px; }
   .stats li .teaser-text {
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+
+  .stat-section2 .text-section {
+    min-width: 80%; }
+
+  .sources {
+    width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
