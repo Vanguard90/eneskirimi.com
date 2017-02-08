@@ -411,26 +411,3 @@ function nextimage() {
 }
 
 setInterval(nextimage, 2000);
-
-/*
-
-
-images = Array.from(images);
-
-let imgAtt = images.map(images => images.className);
-
-function imgCheck (imgAtt) {
-	if (images.classList.contains("revealed")) {
-
-		if (images.classList.contains("diabetes")) {
-
-			let diabetes = document.querySelector(".diabetes");
-			diabetes.src = "img/icons/diabetes-green-icon-mod.png"
-		}
-
-	}
-}
-
-
-
-*/
