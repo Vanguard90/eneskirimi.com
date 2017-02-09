@@ -80,22 +80,28 @@ p {
     background-size: cover;
     margin: 0;
 
+    div {
+
+    	width: 50%;
+    	align-items: center;
+		align-content: center;
+		align-self: center;
+		display: flex;
+		justify-content: center;
+
+    }
+
 	h1 {
 
-		width: 50%;
 		font-size: 36px;
 		color: #fff;
 		font-family: "Gothic";
 		font-weight: bold;
 		padding-bottom: $basic-padding;
-		align-items: center;
-		align-content: center;
-		align-self: center;
 		text-shadow: 1px 1px #000;
 	}
 
 	p {
-		width: 50%;
 		color: #fff;
 		align-items: center;
 		align-content: center;
@@ -403,6 +409,11 @@ p {
 
 }
 
+a:visited {
+
+	color: blue;
+}
+
 .bottom-text {
 
 	padding: $basic-padding*1.5 0 $basic-padding*1.5 $basic-padding/2;
@@ -416,12 +427,13 @@ p {
 
 	h3 {
 		font-family: "Gothic";
-		font-size: 32px;
+		font-size: 26px;
 		padding-bottom: $basic-padding;
 	}
 
 	p {
 		padding-bottom: $basic-padding/2;
+		font-size: 14px;
 	}
 
 }
@@ -429,13 +441,14 @@ p {
 
 #mid-content {
 
-	padding: $basic-padding $basic-padding/2 $basic-padding $basic-padding/2;
+	padding: $basic-padding*1.5 $basic-padding/2 $basic-padding $basic-padding/2;
 }
 
 footer {
 
 	padding-top: $basic-padding;
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 	justify-content: center;
 	padding-bottom: $basic-padding;
@@ -449,6 +462,13 @@ footer {
 	.footer-text {
 
 		font-size: 11px;
+		max-width: 90%;
+	}
+
+	.footer-text:first-of-type {
+
+		padding-bottom: $basic-padding/2;
+
 	}
 }
 
@@ -465,6 +485,10 @@ footer {
 
 .masthead {
 	background-image: url(../img/masthead/fruit-background-m.jpg);
+
+	div {
+		width: 70%;
+	}
 
 }
 
@@ -501,12 +525,7 @@ main {
 .masthead {
 	background-image: url(../img/masthead/fruit-background-s.jpg);
 
-	h1 {
-
-		width: 70%;
-	}
-
-	p {
+	h1, p, div {
 
 		width: 70%;
 	}
@@ -676,6 +695,11 @@ main {
 
 	p {
 		width: 70%;
+	}
+
+	div {
+
+		width: 90%;
 	}
 
 }

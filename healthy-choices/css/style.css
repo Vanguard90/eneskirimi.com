@@ -60,19 +60,21 @@ p {
   background-position: center top;
   background-size: cover;
   margin: 0; }
-  .masthead h1 {
+  .masthead div {
     width: 50%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    display: flex;
+    justify-content: center; }
+  .masthead h1 {
     font-size: 36px;
     color: #fff;
     font-family: "Gothic";
     font-weight: bold;
     padding-bottom: 20px;
-    align-items: center;
-    align-content: center;
-    align-self: center;
     text-shadow: 1px 1px #000; }
   .masthead p {
-    width: 50%;
     color: #fff;
     align-items: center;
     align-content: center;
@@ -258,6 +260,9 @@ p {
     font-size: 110%;
     transition: all ease-in-out 0.75s; }
 
+a:visited {
+  color: blue; }
+
 .bottom-text {
   padding: 30px 0 30px 10px; }
 
@@ -267,17 +272,19 @@ p {
   padding-bottom: 20px; }
   .sources h3 {
     font-family: "Gothic";
-    font-size: 32px;
+    font-size: 26px;
     padding-bottom: 20px; }
   .sources p {
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    font-size: 14px; }
 
 #mid-content {
-  padding: 20px 10px 20px 10px; }
+  padding: 30px 10px 20px 10px; }
 
 footer {
   padding-top: 20px;
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   padding-bottom: 20px; }
@@ -286,7 +293,10 @@ footer {
     width: inherit;
     justify-content: inherit; }
   footer .footer-text {
-    font-size: 11px; }
+    font-size: 11px;
+    max-width: 90%; }
+  footer .footer-text:first-of-type {
+    padding-bottom: 10px; }
 
 @media (max-width: 960px) {
   .extendfull {
@@ -297,6 +307,8 @@ footer {
 
   .masthead {
     background-image: url(../img/masthead/fruit-background-m.jpg); }
+    .masthead div {
+      width: 70%; }
 
   main {
     width: 100%; }
@@ -314,9 +326,7 @@ footer {
 @media (max-width: 700px) {
   .masthead {
     background-image: url(../img/masthead/fruit-background-s.jpg); }
-    .masthead h1 {
-      width: 70%; }
-    .masthead p {
+    .masthead h1, .masthead p, .masthead div {
       width: 70%; }
 
   .stats .usa {
@@ -416,6 +426,8 @@ footer {
       width: 70%; }
     .masthead p {
       width: 70%; }
+    .masthead div {
+      width: 90%; }
 
   .stats .stat-section .conjurer-padding {
     padding-top: 70px; }
