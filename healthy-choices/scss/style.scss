@@ -95,7 +95,7 @@ p {
 
 		font-size: 36px;
 		color: #fff;
-		font-family: "Gothic";
+		font-family: "Gothic", sans-serif;
 		font-weight: bold;
 		padding-bottom: $basic-padding;
 		text-shadow: 1px 1px #000;
@@ -127,7 +127,7 @@ p {
 
 	h2 {
 
-		font-family: "Gothic";
+		font-family: "Gothic", sans-serif;
 		font-size: 36px;
 		align-self: center;
 		align-items: center;
@@ -326,7 +326,7 @@ p {
 	h2 {
 
 		margin: 0 auto;
-		font-family: "Gothic";
+		font-family: "Gothic", sans-serif;
 		transition: $font-transition;
 		padding-bottom: $basic-padding*1.5;
 	}
@@ -368,7 +368,7 @@ p {
 
 		h3 {
 
-		font-family: "Gothic";
+		font-family: "Gothic", sans-serif;
 		padding-bottom: $basic-padding;
 		font-size: 32px;
 		align-self: center;
@@ -379,6 +379,7 @@ p {
 
 			font-family: "Scala";
 			align-self: center;
+			line-height: 1.2;
 		}
 
 		h3, p {
@@ -426,7 +427,7 @@ a:visited {
 	padding-bottom: $basic-padding;
 
 	h3 {
-		font-family: "Gothic";
+		font-family: "Gothic", sans-serif;
 		font-size: 26px;
 		padding-bottom: $basic-padding;
 	}
@@ -663,7 +664,7 @@ main {
 
 		h3 {
 
-		font-family: "Gothic";
+		font-family: "Gothic", sans-serif;
 		padding-bottom: $basic-padding;
 		font-size: 32px;
 		align-self: center;
@@ -710,7 +711,7 @@ main {
 
 			.conjurer-padding {
 
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 	}
 
