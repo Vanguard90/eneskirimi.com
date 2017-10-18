@@ -1,0 +1,87 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    line-height: 1;
+}
+
+body {
+
+	font-family: Open Sans,sans-serif;
+
+	.masthead {
+		height: 100vh;
+		padding: 0 20px;
+		background-image: url(../img/masthead.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: top;
+		background-repeat: no-repeat;
+		text-align: center;
+		color: #fff;
+		text-shadow: 0 2px 3px #556b8e;
+
+		h1 {
+			font-size: 66px;
+			padding-top: 100px;
+			padding-bottom: 10px;
+		}
+
+		h2 {
+			font-size: 30px;
+		}
+
+		.web-links {
+			display: block;
+			width: 150px;
+			margin: 20px auto;
+
+			a {
+				display: inline-block;
+				height: 35px;
+				width: 30px;
+
+				svg {
+					fill: #fff;
+					filter: drop-shadow(0 2px 3px #556b8e);
+				}
+			}
+
+			a:nth-child(3n-1) {
+
+				padding: 0 20px;
+			}
+		}
+
+		nav {
+			margin: 15px auto 0;
+			padding-top: 20px;
+			border-top: 1px solid;
+			width: 280px;
+
+			a {
+				padding: 10px 8px;
+				color: #fff;
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 16px;
+				border-bottom: 3px solid transparent;
+				transition: .2s;
+				font-family: Open Sans, sans-serif;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+}
