@@ -15,6 +15,15 @@ module.exports = {
               loader: "sass-loader" // compiles Sass to CSS
           }]
       },
+        {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+          options: {
+          attrs: ['img:src']
+        }
+      }
+    },
           {
             test: /\.(png|svg|jpg|gif)$/,
             use: [
