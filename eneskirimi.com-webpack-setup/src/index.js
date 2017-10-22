@@ -1,5 +1,6 @@
 import style from './scss/style.scss';
 import masthead from './img/masthead.jpg';
+import EnesFace from './img/face-cropped.jpg';
 
 /*
 import _ from 'lodash';
