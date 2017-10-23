@@ -32,11 +32,11 @@ body {
 		background-repeat: no-repeat;
 		text-align: center;
 		color: #fff;
-		text-shadow: 0 2px 3px #556b8e;
+		text-shadow: 0 2px 3px #000011;
 
 		h1 {
 			font-size: 66px;
-			padding-top: 12%;
+			padding-top: 10%;
 			padding-bottom: 10px;
 		}
 
@@ -56,7 +56,7 @@ body {
 
 				svg {
 					fill: #fff;
-					filter: drop-shadow(0 2px 3px #556b8e);
+					filter: drop-shadow(0 2px 3px #000011);
 				}
 			}
 
@@ -121,4 +121,33 @@ body {
 		}
 	}
 
+.projects {
+	height: 100vh;
+	padding: 0 20px;
+	background-image: url(../img/masthead.jpg);
+	background-color: rgba(0,0,0,0.3);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 2px 3px #556b8e;
+	background-blend-mode: darken;
+
+	.project-box {
+		display: inline-block;
+		width: 30%;
+	}
+	.project-box:nth-child(3n-2) {
+		padding-left: 1%;
+	}
+	.project-box:nth-child(3n-1) {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.project-box:nth-child(3n) {
+		padding-right: 1%;
+	}
+}
 }
