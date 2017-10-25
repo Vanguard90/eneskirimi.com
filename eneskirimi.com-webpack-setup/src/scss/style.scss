@@ -133,28 +133,65 @@ body {
 	color: #fff;
 	text-shadow: 0 2px 3px #556b8e;
 	background-blend-mode: darken;
+	position: relative;
 
 	h2 {
+		padding: 20px 0;
 		display: block;
 	}
 
 	.project-box {
+		overflow: hidden;
 		display: inline-block;
+		position: relative;
 		width: 30%;
+		background-color: #fff;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+		min-height: 100px;
+		vertical-align: top;
 
 		img {
 			width: 100%;
+			vertical-align: top;
+		}
+
+
+		h3, p {
+			color: #000;
+			text-shadow: none;
+		}
+
+		h3 {
+
+			padding: 15px 0;
+		}
+
+		p {
+			text-align: left;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		p:last-child {
+			padding-top: 10px;
+			padding-bottom: 20px;
 		}
 	}
-	.project-box:nth-child(3n-2) {
-		padding-left: 1%;
+	.project-box:nth-child(5n-4) {
+		margin-left: 1%;
 	}
-	.project-box:nth-child(3n-1) {
-		padding-left: 2%;
-		padding-right: 2%;
+	.project-box:nth-child(5n-3) {
+		margin-left: 2%;
+		margin-right: 2%;
 	}
-	.project-box:nth-child(3n) {
-		padding-right: 1%;
+	.project-box:nth-child(5n-2) {
+		margin-right: 1%;
+	}
+	.project-box:nth-child(5n-1) {
+		margin-right: 1%;
+	}
+	.project-box:nth-child(5n-1) {
+	margin-left: 1%;
 	}
 }
 }
