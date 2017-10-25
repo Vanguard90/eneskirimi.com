@@ -112,7 +112,7 @@ body {
 				padding-left: 1%;
 				display: inline-block;
 				vertical-align: top;
-				padding-top: 4%;
+				padding-top: 2%;
 			}
 
 			.about-description p:nth-child(2n-1) {
@@ -122,7 +122,6 @@ body {
 	}
 
 .projects {
-	height: 100vh;
 	padding: 0 20px;
 	background-image: url(../img/masthead.jpg);
 	background-color: rgba(0,0,0,0.3);
@@ -135,9 +134,17 @@ body {
 	text-shadow: 0 2px 3px #556b8e;
 	background-blend-mode: darken;
 
+	h2 {
+		display: block;
+	}
+
 	.project-box {
 		display: inline-block;
 		width: 30%;
+
+		img {
+			width: 100%;
+		}
 	}
 	.project-box:nth-child(3n-2) {
 		padding-left: 1%;
