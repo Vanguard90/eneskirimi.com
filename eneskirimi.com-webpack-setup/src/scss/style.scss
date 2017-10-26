@@ -133,29 +133,26 @@ body {
 	color: #fff;
 	text-shadow: 0 2px 3px #556b8e;
 	background-blend-mode: darken;
-	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
 	h2 {
 		padding: 20px 0;
-		display: block;
+		width: 100%;
 	}
 
 	.project-box {
 		overflow: hidden;
-		display: inline-block;
-		position: relative;
-		width: 30%;
+		width: 32%;
 		background-color: #fff;
-		box-sizing: border-box;
 		margin-bottom: 20px;
-		min-height: 100px;
 		vertical-align: top;
 
 		img {
 			width: 100%;
 			vertical-align: top;
 		}
-
 
 		h3, p {
 			color: #000;
@@ -176,22 +173,6 @@ body {
 			padding-top: 10px;
 			padding-bottom: 20px;
 		}
-	}
-	.project-box:nth-child(5n-4) {
-		margin-left: 1%;
-	}
-	.project-box:nth-child(5n-3) {
-		margin-left: 2%;
-		margin-right: 2%;
-	}
-	.project-box:nth-child(5n-2) {
-		margin-right: 1%;
-	}
-	.project-box:nth-child(5n-1) {
-		margin-right: 1%;
-	}
-	.project-box:nth-child(5n-1) {
-	margin-left: 1%;
 	}
 }
 }
