@@ -1,6 +1,5 @@
 # eneskirimi.com
-This domain will be used for the portfolio page.
 
-Todo: Set up webpack dev server to be used.
+The domain for my portfolio page.
 
-Progress 17/10 - Can do bundling files and assets via loaders for webpack.
+Portfolio page is complete except the contact form.
