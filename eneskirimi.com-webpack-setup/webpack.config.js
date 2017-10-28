@@ -16,6 +16,10 @@ module.exports = {
           }]
       },
         {
+          test: /\.css$/,
+          use: ["style-loader", "css-loader", "postcss-loader"]
+      },
+        {
         test: /\.(html)$/,
         use: {
           loader: 'html-loader',
@@ -43,6 +47,7 @@ module.exports = {
   	contentBase: './dist'
   },
   plugins: [
+    require('autoprefixer'),
   	new CleanWebpackPlugin(['dist/*']),
   	new HtmlWebpackPlugin({
   		template: 'index.html'
