@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.eneskirimi.com/</loc>
+  <lastmod>2018-07-18T11:31:24+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/nyt-news/</loc>
+  <lastmod>2017-11-01T18:56:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/weather/index.html</loc>
+  <lastmod>2017-07-04T19:21:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/healthy-choices/index.html</loc>
+  <lastmod>2017-02-09T22:02:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/mock-website/index.html</loc>
+  <lastmod>2017-01-15T20:05:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/mock-website/page-2/</loc>
+  <lastmod>2017-01-15T20:06:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/sample-page/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/2018/07/18/quick-flexbox-primer/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/author/eneskirimi/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/category/css/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/category/css/flexbox/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/css/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/css3/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/flexbox/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/2018/01/16/short-expanation-ngmodule/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/category/angular/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/category/angular/ngmodule/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/angular/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/ngmodule/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/2018/07/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/2018/01/</loc>
+  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/mock-website/</loc>
+  <lastmod>2017-01-15T20:05:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
