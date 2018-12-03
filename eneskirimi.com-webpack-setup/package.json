@@ -1,32 +1,46 @@
 {
-  "name": "Eneskirimi.com",
-  "version": "0.1.0",
-  "description": "Eneskirimi.com webpack setup",
+  "name": "eneskirimi-website-webpack-setup",
+  "version": "1.1.0",
+  "description": "Portfolio website",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.4.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^1.0.1",
+    "csv-loader": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
+  },
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open --config webpack.dev.js"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.11",
-    "csv-loader": "^2.1.1",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.11",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^2.30.1",
-    "node-sass": "^4.10.0",
-    "postcss-loader": "^2.1.6",
-    "sass-loader": "^6.0.7",
-    "style-loader": "^0.19.1",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "webpack": "^3.12.0",
-    "webpack-dev-server": "^2.11.3",
-    "webpack-merge": "^4.1.4",
-    "xml-loader": "^1.2.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vanguard90/eneskirimi.com.git"
   },
-  "dependencies": {}
+  "keywords": [
+    "enes",
+    "kirimi",
+    "portfolio-website",
+    "frontend"
+  ],
+  "author": "Enes Kirimi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vanguard90/eneskirimi.com/issues"
+  },
+  "homepage": "https://github.com/Vanguard90/eneskirimi.com#readme"
 }
