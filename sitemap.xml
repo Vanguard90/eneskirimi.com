@@ -9,118 +9,148 @@
 
 <url>
   <loc>https://www.eneskirimi.com/</loc>
-  <lastmod>2018-07-18T11:31:24+00:00</lastmod>
+  <lastmod>2019-06-06T17:31:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.eneskirimi.com/blog/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.eneskirimi.com/nyt-news/</loc>
-  <lastmod>2017-11-01T18:56:14+00:00</lastmod>
+  <lastmod>2019-06-04T18:14:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/weather/index.html</loc>
-  <lastmod>2017-07-04T19:21:44+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/weather/</loc>
+  <lastmod>2019-06-04T18:11:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/healthy-choices/index.html</loc>
-  <lastmod>2017-02-09T22:02:50+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/healthy-choices/</loc>
+  <lastmod>2019-06-03T22:58:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/mock-website/index.html</loc>
-  <lastmod>2017-01-15T20:05:58+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/mock-website/</loc>
+  <lastmod>2019-06-04T18:03:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.eneskirimi.com/mock-website/page-2/</loc>
-  <lastmod>2017-01-15T20:06:08+00:00</lastmod>
+  <lastmod>2019-06-04T18:03:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/blog/sample-page/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/blog/about/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/blog/2018/07/18/quick-flexbox-primer/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/blog/2018/09/07/manually-trigger-ngfor-at-angular/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.eneskirimi.com/blog/author/eneskirimi/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/blog/category/css/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/blog/2018/07/18/quick-flexbox-primer/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/blog/category/css/flexbox/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/blog/2018/03/16/short-expanation-ngmodule/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/blog/tag/css/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eneskirimi.com/blog/tag/css3/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eneskirimi.com/blog/tag/flexbox/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eneskirimi.com/blog/2018/01/16/short-expanation-ngmodule/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eneskirimi.com/blog/category/angular/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eneskirimi.com/blog/category/angular/ngmodule/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eneskirimi.com/blog/tag/angular/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eneskirimi.com/blog/tag/ngmodule/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/blog/2018/09/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.eneskirimi.com/blog/2018/07/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/blog/2018/01/</loc>
-  <lastmod>2018-07-18T11:35:24+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/blog/2018/03/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.eneskirimi.com/mock-website/</loc>
-  <lastmod>2017-01-15T20:05:58+00:00</lastmod>
+  <loc>https://www.eneskirimi.com/blog/category/angular/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/category/css/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/category/css/flexbox/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/category/javascript/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/category/angular/ngfor/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/category/angular/ngmodule/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/angular/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/javascript/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/ngfor/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/trackby/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/css/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/css3/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/flexbox/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.eneskirimi.com/blog/tag/ngmodule/</loc>
+  <lastmod>2019-06-06T21:22:14+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
