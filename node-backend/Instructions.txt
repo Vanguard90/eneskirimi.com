@@ -1,1 +1,0 @@
-Run the app: SET DEBUG=node-backend:* & npm start
