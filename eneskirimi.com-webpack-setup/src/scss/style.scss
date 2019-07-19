@@ -132,10 +132,9 @@ body {
 	#about {
 		.about-holder {
 			max-width: $L-width;
-			margin: 20px auto 40px;
+			margin: 20px auto 20px;
 			display: block;
 			position: relative;
-			vertical-align: middle;
 
 			h2 {
 				text-align: center;
@@ -151,11 +150,11 @@ body {
 			}
 
 			.about-description {
-				width: 70%;
+				width: 74%; // Can also use flexbox at here in the future
 				padding-left: 1%;
 				display: inline-block;
 				vertical-align: top;
-				padding-top: 2%;
+				padding-top: 3%;
 			}
 
 			.about-description p:nth-child(2n-1) {
@@ -164,6 +163,18 @@ body {
 
 			p {
 				line-height: 1.7;
+			}
+		}
+		.skills-holder {
+			max-width: $L-width;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			margin: 0 auto 40px;
+			
+			div {
+				padding-right: 5px;
+				padding-left: 5px;
 			}
 		}
 	}
