@@ -1,5 +1,4 @@
 const merge = require('webpack-merge');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const common = require('./webpack.common.js');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -26,7 +25,6 @@ module.exports = merge(common, {
     },
     plugins: [
         extractSass,
-        new UglifyJSPlugin(),
         new CopyWebpackPlugin([{ from: './robots.txt', to: '' }, { from: './sitemap.xml', to: '' }]) // Copy to build folder
     ]
 });
