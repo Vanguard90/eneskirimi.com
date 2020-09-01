@@ -25,8 +25,8 @@ module.exports = merge(common, {
         }]
     },
     plugins: [
-    extractSass,
-    new UglifyJSPlugin(),
-    new CopyWebpackPlugin([{ from: './robots.txt', to: '' },]) // Copy to build folder
- ]
+        extractSass,
+        new UglifyJSPlugin(),
+        new CopyWebpackPlugin([{ from: './robots.txt', to: '' }, { from: './sitemap.xml', to: '' }]) // Copy to build folder
+    ]
 });
