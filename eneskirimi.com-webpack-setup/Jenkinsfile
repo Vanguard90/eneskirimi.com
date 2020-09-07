@@ -1,0 +1,51 @@
+pipeline {
+    agent {
+        docker {
+            image 'node:12.18.3-alpine3.11'
+            args '-p 3000:3000'
+        }
+    }
+    stages {
+        stage('Install') { 
+            steps {
+                dir('eneskirimi.com-webpack-setup') {
+                    sh 'npm install' 
+                }
+            }
+        }
+        stage('Build') {
+            steps {
+                dir('eneskirimi.com-webpack-setup') {
+                    sh 'npm run build' 
+                }
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                dir('eneskirimi.com-webpack-setup/dist') {
+                    sshPublisher(
+                        publishers: [
+                            sshPublisherDesc(
+                            configName: 'eneskirimi.com',
+                            transfers: [
+                                sshTransfer(
+                                    cleanRemote: true,
+                                    excludes: '',
+                                    execCommand: '',
+                                    execTimeout: 120000,
+                                    flatten: false,
+                                    makeEmptyDirs: false,
+                                    noDefaultExcludes: false,
+                                    removePrefix: '',
+                                    sourceFiles: '**/*')
+                                        ],
+                                        usePromotionTimestamp: false,
+                                        useWorkspaceInPromotion: false,
+                                        verbose: true)
+                                    ]
+                                )
+                }
+            }
+        }
+    }
+}
