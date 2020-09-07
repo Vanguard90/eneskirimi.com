@@ -5,5 +5,6 @@ Disallow: /nogooglebot/
 # Rule 2
 User-agent: *
 Allow: /
+Disallow: /cv/*
 
 Sitemap: https://www.eneskirimi.com/sitemap.xml
