@@ -29,7 +29,7 @@ pipeline {
                             configName: 'eneskirimi.com',
                             transfers: [
                                 sshTransfer(
-                                    cleanRemote: true,
+                                    cleanRemote: false,
                                     excludes: '',
                                     execCommand: '',
                                     execTimeout: 120000,
