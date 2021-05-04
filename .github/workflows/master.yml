@@ -33,5 +33,7 @@ jobs:
           cd eneskirimi.com-webpack-setup
           npm install
           
-      - name: Install dependencies
-        run: npm run build
+      - name: Run build command
+        run: |
+          cd eneskirimi.com-webpack-setup
+          npm run build
