@@ -39,16 +39,19 @@ jobs:
           cd eneskirimi.com-webpack-setup
           npm run build
           
+      - name: Check env values
+        run: echo ${{ env }}
+          
       - name: Deploy to server
         uses: easingthemes/ssh-deploy@v2
         with:
           # Private Key
-          SSH_PRIVATE_KEY: ${{ ENESKIRIMI_KEY }}
+          SSH_PRIVATE_KEY: ${{ env.ENESKIRIMI_KEY }}
           # Remote host
-          REMOTE_HOST: ${{ SSH_HOST }}
+          REMOTE_HOST: ${{ env.SSH_HOST }}
           # Remote user
-          REMOTE_USER: ${{ SSH_USER }}
+          REMOTE_USER: ${{ env.SSH_USER }}
           # Source directory
           SOURCE: eneskirimi.com-webpack-setup/dist
           # Target directory
-          TARGET: ${{ WEBSITE_PATH }}
+          TARGET: ${{ env.WEBSITE_PATH }}
