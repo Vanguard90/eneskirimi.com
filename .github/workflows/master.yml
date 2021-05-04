@@ -19,10 +19,13 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    environment: cd
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+        env:
+          ENESKIRIMI_KEY: ${{ secrets.ENESKIRIMI_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          WEBSITE_PATH: ${{ secrets.WEBSITE_PATH }}
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2.1.5
@@ -39,19 +42,16 @@ jobs:
           cd eneskirimi.com-webpack-setup
           npm run build
           
-      - name: Check env values
-        run: echo ${{ env.cd }}
-          
       - name: Deploy to server
         uses: easingthemes/ssh-deploy@v2
         with:
           # Private Key
-          SSH_PRIVATE_KEY: ${{ env.cd.ENESKIRIMI_KEY }}
+          SSH_PRIVATE_KEY: ${{ env.ENESKIRIMI_KEY }}
           # Remote host
-          REMOTE_HOST: ${{ env.cd.SSH_HOST }}
+          REMOTE_HOST: ${{ env.SSH_HOST }}
           # Remote user
-          REMOTE_USER: ${{ env.cd.SSH_USER }}
+          REMOTE_USER: ${{ env.SSH_USER }}
           # Source directory
           SOURCE: eneskirimi.com-webpack-setup/dist
           # Target directory
-          TARGET: ${{ env.cd.WEBSITE_PATH }}
+          TARGET: ${{ env.WEBSITE_PATH }}
