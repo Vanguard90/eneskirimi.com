@@ -43,15 +43,16 @@ jobs:
           npm run build
           
     - name: Deploy to server
-      uses: easingthemes/ssh-deploy@v2
+      uses: appleboy/scp-action@master
       with:
           # Private Key
-        SSH_PRIVATE_KEY: ${{ env.ENESKIRIMI_KEY }}
+        key: ${{ env.ENESKIRIMI_KEY }}
+        port: 22
           # Remote host
-        REMOTE_HOST: ${{ env.SSH_HOST }}
+        host: ${{ env.SSH_HOST }}
           # Remote user
-        REMOTE_USER: ${{ env.SSH_USER }}
+        username: ${{ env.SSH_USER }}
           # Source directory
-        SOURCE: eneskirimi.com-webpack-setup/dist
+        source: eneskirimi.com-webpack-setup/dist
           # Target directory
-        TARGET: ${{ env.WEBSITE_PATH }}
+        target: ${{ env.WEBSITE_PATH }}
