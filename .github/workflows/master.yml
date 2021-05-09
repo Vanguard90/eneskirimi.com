@@ -56,3 +56,4 @@ jobs:
         source: eneskirimi.com-webpack-setup/dist/*
           # Target directory
         target: ${{ env.WEBSITE_PATH }}
+        strip_components: 2
