@@ -53,6 +53,6 @@ jobs:
           # Remote user
         username: ${{ env.SSH_USER }}
           # Source directory
-        source: eneskirimi.com-webpack-setup/dist
+        source: eneskirimi.com-webpack-setup/dist/*
           # Target directory
         target: ${{ env.WEBSITE_PATH }}
