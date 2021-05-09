@@ -47,7 +47,7 @@ jobs:
       with:
           # Private Key
         key: ${{ env.ENESKIRIMI_KEY }}
-        port: 2222
+        port: 22
           # Remote host
         host: ${{ env.SSH_HOST }}
           # Remote user
