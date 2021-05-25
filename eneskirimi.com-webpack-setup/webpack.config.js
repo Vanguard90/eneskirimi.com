@@ -6,8 +6,6 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const env = process.env.NODE_ENV;
 
-console.log("environment", env);
-
 module.exports = {
   mode: env,
   devtool: env === "development" ? "inline-source-map" : "",
