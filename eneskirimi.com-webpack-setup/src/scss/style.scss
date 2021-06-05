@@ -440,6 +440,12 @@ body {
   }
 }
 
+html {
+  // Prevent FOUT part 2
+  visibility: visible;
+  opacity: 1;
+}
+
 @media (max-width: 959px) {
   body {
     .masthead {
