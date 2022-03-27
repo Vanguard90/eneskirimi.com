@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const env = process.env.NODE_ENV;
@@ -51,7 +51,7 @@ module.exports = {
     env === "production"
       ? [
           require("autoprefixer"),
-          new CleanWebpackPlugin(["dist/*"]),
+          new CleanWebpackPlugin(),
           new HtmlWebpackPlugin({
             template: "index.html",
             title: "Production",
@@ -63,7 +63,7 @@ module.exports = {
         ]
       : [
           require("autoprefixer"),
-          new CleanWebpackPlugin(["dist/*"]),
+          new CleanWebpackPlugin(),
           new HtmlWebpackPlugin({
             template: "index.html",
             title: "Production",
