@@ -29,6 +29,20 @@
 	<meta name="description" content="Portfolio page of Enes Kirimi, Front end developer">
 	<meta name="keywords" content="enes, kirimi, portfolio, front, end, developer, engineer, blog, CV, amsterdam">
 	<link rel="canonical" href="https://www.eneskirimi.com/" />
+	<script type="text/javascript">
+
+		function replaceText(className, replaceText) {
+			const targetNode = document.querySelector(className);
+			targetNode.textContent = replaceText;
+		}
+
+		// Get around html-loader custom tag build error while keeping everything SEO-friendly
+		document.addEventListener("DOMContentLoaded", function () {
+		replaceText('.about-title', "< About />");
+		replaceText('.projects-title', "< Projects />");
+		replaceText('.contact-title', "< Contact />");
+});
+	</script>
 </head>
 
 <body>
@@ -88,8 +102,8 @@
 	</div>
 	<div id="about">
 		<div class="about-holder">
-			<h2>
-				< About />
+			<h2 class="about-title">
+				About
 			</h2>
 			<img src="./src/img/face-cropped.jpg" alt="enes-kirimi-face" />
 			<div class="about-description">
@@ -323,8 +337,8 @@
 		</div>
 	</div>
 	<div id="projects">
-		<h2>
-			< Projects />
+		<h2 class="projects-title">
+			Projects
 		</h2>
 		<div class="project-box">
 			<img alt="streamabledl-thumbnail" src="./src/img/thumbnails/streamabledl-thumbnail.png">
@@ -395,8 +409,8 @@
 		</div>
 	</div>
 	<div id="contact">
-		<h2>
-			< Contact />
+		<h2 class="contact-title">
+			Contact
 		</h2>
 		<p>Find me on GitHub &amp; LinkedIn</p>
 		<div class="web-links">
