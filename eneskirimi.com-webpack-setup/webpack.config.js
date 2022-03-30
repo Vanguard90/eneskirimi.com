@@ -7,8 +7,14 @@ const env = process.env.NODE_ENV;
 
 module.exports = {
   mode: env,
-  devtool: env === "development" ? "inline-source-map" : "",
+  devtool: env === "development" ? "inline-source-map" : false,
   entry: "./src/index.js",
+  devServer: {
+    host: "localhost",
+    open: true,
+    historyApiFallback: true,
+    port: 8080,
+  },
   module: {
     rules: [
       {
@@ -50,9 +56,6 @@ module.exports = {
         },
       },
     ],
-  },
-  devServer: {
-    contentBase: "./dist",
   },
   plugins:
     env === "production"
